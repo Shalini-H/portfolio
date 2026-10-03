@@ -1,10 +1,10 @@
 /* ==========================================================================
    Shalini H - Systems Portfolio JavaScript
-   Handles Project Filtering, Architecture Modals, Copy Actions & Navigation
+   Apple Minimalism & CookPilot Editorial Theme Interaction Driver
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Mobile Navigation Menu Toggle
+  // 1. Mobile Navigation Toggle
   const mobileToggle = document.getElementById('mobileToggle');
   const navMenu = document.getElementById('navMenu');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const siteHeader = document.getElementById('siteHeader');
 
   function updateActiveNavLink() {
-    const scrollPosition = window.scrollY + 100;
+    const scrollPosition = window.scrollY + 120;
 
     sections.forEach(section => {
       const top = section.offsetTop;
@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (siteHeader) {
       if (window.scrollY > 20) {
-        siteHeader.style.borderBottomColor = 'rgba(255, 255, 255, 0.16)';
+        siteHeader.style.borderBottomColor = 'var(--border-warm-strong)';
       } else {
-        siteHeader.style.borderBottomColor = 'var(--border-subtle)';
+        siteHeader.style.borderBottomColor = 'var(--border-warm)';
       }
     }
   }
@@ -64,33 +64,33 @@ document.addEventListener('DOMContentLoaded', () => {
   updateActiveNavLink();
 
   // 3. Project Filter Tabs
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+  const filterTabs = document.querySelectorAll('.filter-tab, .filter-btn');
+  const projectItems = document.querySelectorAll('.project-showcase, .project-card');
 
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterButtons.forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
       });
 
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
 
-      const filterValue = btn.getAttribute('data-filter');
+      const filterValue = tab.getAttribute('data-filter');
 
-      projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
+      projectItems.forEach(item => {
+        const category = item.getAttribute('data-category');
         if (filterValue === 'all' || category === filterValue) {
-          card.style.display = 'block';
+          item.style.display = 'block';
         } else {
-          card.style.display = 'none';
+          item.style.display = 'none';
         }
       });
     });
   });
 
-  // 4. Toast Notification System
+  // 4. Toast Notification
   const toastNotice = document.getElementById('toastNotice');
   const toastMessage = document.getElementById('toastMessage');
   let toastTimer = null;
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2800);
   }
 
-  // 5. Copy Email Action Buttons
+  // 5. One-Click Copy Email Action
   const copyButtons = document.querySelectorAll('.copy-email-btn');
 
   copyButtons.forEach(btn => {
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         targetModal.removeAttribute('hidden');
         document.body.style.overflow = 'hidden';
 
-        const closeBtn = targetModal.querySelector('.modal-close-btn');
+        const closeBtn = targetModal.querySelector('.modal-close, .modal-close-btn');
         if (closeBtn) closeBtn.focus();
       }
     });
