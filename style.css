@@ -186,29 +186,6 @@ img {
   transform: translateY(0);
 }
 
-/* --- 3D Interactive Tilt & Mouse Spotlight Card --- */
-.tilt-card {
-  position: relative;
-  transition: transform var(--transition-default), box-shadow var(--transition-default), border-color var(--transition-default);
-  transform-style: preserve-3d;
-  will-change: transform;
-  overflow: hidden;
-}
-
-.card-spotlight {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(450px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(191, 83, 44, 0.05), transparent 70%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: inherit;
-  z-index: 2;
-}
-
-.tilt-card:hover .card-spotlight {
-  opacity: 1;
-}
 
 /* --- Site Header --- */
 .site-header {
@@ -1640,9 +1617,6 @@ img {
     scroll-behavior: auto !important;
   }
 
-  .tilt-card {
-    transform: none !important;
-  }
 
   .reveal-on-scroll {
     opacity: 1 !important;

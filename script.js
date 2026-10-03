@@ -116,44 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 5. 3D Interactive Card Tilt & Mouse Spotlight Glare
-  const tiltCards = document.querySelectorAll('.tilt-card');
-
-  if (!prefersReducedMotion && window.matchMedia('(pointer: fine)').matches) {
-    tiltCards.forEach(card => {
-      let isHovered = false;
-
-      card.addEventListener('mouseenter', () => {
-        isHovered = true;
-      });
-
-      card.addEventListener('mousemove', (e) => {
-        if (!isHovered) return;
-
-        const rect = card.getBoundingClientRect();
-        const clientX = e.clientX - rect.left;
-        const clientY = e.clientY - rect.top;
-
-        // Mouse Spotlight Coordinates
-        card.style.setProperty('--mouse-x', `${clientX}px`);
-        card.style.setProperty('--mouse-y', `${clientY}px`);
-
-        // Subtle Tilt Angle
-        const xPercent = (clientX / rect.width) - 0.5;
-        const yPercent = (clientY / rect.height) - 0.5;
-
-        const rotateX = (-yPercent * 6).toFixed(2);
-        const rotateY = (xPercent * 6).toFixed(2);
-
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-3px)`;
-      });
-
-      card.addEventListener('mouseleave', () => {
-        isHovered = false;
-        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
-      });
-    });
-  }
 
   // 6. Project Filter Tabs
   const filterTabs = document.querySelectorAll('.filter-tab, .filter-btn');
