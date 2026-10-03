@@ -6,7 +6,7 @@
   <title>Shalini H | Information Science Engineer & Full-Stack Developer</title>
   <meta name="description" content="Portfolio of Shalini H, Information Science & Engineering student at NIE Mysore (CGPA: 8.75). Architecting deterministic algorithm visualizers, local-first web engines, and reactive frontend systems.">
   <meta name="author" content="Shalini H">
-  <meta name="theme-color" content="#ede6da">
+  <meta name="theme-color" content="#635bff">
 
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
@@ -17,7 +17,7 @@
   <!-- Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
@@ -53,13 +53,15 @@
 <body>
   <a href="#main-content" class="skip-to-content">Skip to content</a>
 
-  <!-- Ambient Parallax Backdrop Rules -->
-  <div class="ambient-parallax-layer" aria-hidden="true">
-    <div class="parallax-line parallax-line-1" data-parallax="0.08"></div>
-    <div class="parallax-line parallax-line-2" data-parallax="-0.06"></div>
+  <!-- Top Hero Stripe Gradient Backdrop -->
+  <div class="stripe-mesh-backdrop" aria-hidden="true">
+    <div class="mesh-shape mesh-shape-1"></div>
+    <div class="mesh-shape mesh-shape-2"></div>
+    <div class="mesh-shape mesh-shape-3"></div>
+    <div class="mesh-shape mesh-shape-4"></div>
   </div>
 
-  <!-- Minimal Apple-Style Navigation Bar -->
+  <!-- Stripe-Style Clean Navigation Bar -->
   <header class="site-header" id="siteHeader">
     <div class="site-container header-inner">
       <a href="#hero" class="brand-link">
@@ -78,12 +80,16 @@
       </nav>
 
       <div class="header-actions">
-        <a href="Shalini-H-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-resume">
-          <span>Resume</span>
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
+        <a href="#contact" class="header-contact-link">
+          <span>Contact</span>
+          <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+        <a href="Shalini-H-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-header-cta">
+          <span>Resume (PDF)</span>
+          <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         </a>
 
@@ -96,182 +102,272 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section: Apple Breathing Layout with Parallax Depth -->
+    <!-- Hero Section: Stripe Gradient, White, and Dark Blue -->
     <section class="section-hero" id="hero">
       <div class="site-container hero-container">
         <div class="hero-content reveal-on-scroll">
           <div class="eyebrow-pill">
             <span class="eyebrow-dot" aria-hidden="true"></span>
-            <span>NIE Mysore · Information Science (2024-2028) · CGPA 8.75</span>
+            <span>NIE Mysore · Information Science · CGPA 8.75</span>
           </div>
 
           <h1 class="hero-title">
-            Architecting deterministic software engines and pure algorithm visualizers.
+            Deterministic software systems to power your applications.
           </h1>
 
           <p class="hero-lead">
-            I am <strong class="text-espresso">Shalini H</strong>, an engineering undergraduate building local-first web applications, pure-function algorithm engines, and reactive user interfaces backed by 196+ automated unit tests.
+            Join the engineering teams building with high-test rigor. I craft local-first web engines, pure-function algorithm visualizers, and reactive browser systems validated by 196+ automated unit tests.
           </p>
 
           <div class="hero-actions">
-            <a href="#projects" class="btn-primary">
-              <span>View Projects</span>
-              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+            <a href="#projects" class="btn-stripe-dark">
+              <span>Explore Projects</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
             </a>
 
-            <button type="button" class="btn-ghost copy-email-btn" data-email="shalinih6363841526@gmail.com">
-              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            <a href="mailto:shalinih6363841526@gmail.com" class="link-stripe-arrow">
+              <span>Contact Shalini</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
-              <span class="copy-label">Copy Email</span>
-            </button>
+            </a>
           </div>
 
-          <div class="hero-meta-strip">
-            <span class="meta-label">Core Competencies:</span>
-            <span class="meta-item">TypeScript</span>
-            <span class="meta-sep">/</span>
-            <span class="meta-item">React.js</span>
-            <span class="meta-sep">/</span>
-            <span class="meta-item">Java (OOP)</span>
-            <span class="meta-sep">/</span>
-            <span class="meta-item">DSA & Graph Theory</span>
-            <span class="meta-sep">/</span>
-            <span class="meta-item">Vitest Testing</span>
+          <div class="hero-tag-pills">
+            <span class="pill-label">Core Stack:</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">React.js</span>
+            <span class="tech-badge">Java (OOP)</span>
+            <span class="tech-badge">Graph Theory</span>
+            <span class="tech-badge">Vitest Testing</span>
           </div>
         </div>
 
-        <div class="hero-portrait-wrapper reveal-on-scroll" data-parallax="0.04">
-          <div class="portrait-card" id="portraitCard">
-            <img src="photo.jpeg" alt="Shalini H" class="portrait-image" width="380" height="460" loading="eager">
-            <div class="portrait-caption">
-              <div class="caption-title">Shalini H</div>
-              <div class="caption-subtitle">Information Science & Engineering · NIE Mysore</div>
+        <!-- Stripe Layered Dual-Mockup Showcase -->
+        <div class="hero-mockup-stage reveal-on-scroll" data-parallax="0.04">
+          <!-- Back Card: Engineering Intelligence Dashboard -->
+          <div class="mockup-dash-card">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="dash-window-title">
+                <svg class="dash-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <span>algotrace-telemetry</span>
+              </div>
+              <span class="mockup-tag-live">60 FPS</span>
+            </div>
+
+            <div class="dash-body">
+              <div class="dash-metrics-row">
+                <div class="dash-metric-col">
+                  <span class="dash-label">TEST SUITES</span>
+                  <span class="dash-val">196 / 196</span>
+                  <span class="dash-badge badge-success">100% Passing</span>
+                </div>
+                <div class="dash-metric-col">
+                  <span class="dash-label">STEP LATENCY</span>
+                  <span class="dash-val">16.6 ms</span>
+                  <span class="dash-badge badge-neutral">Deterministic</span>
+                </div>
+              </div>
+
+              <div class="dash-chart-card">
+                <div class="chart-header">
+                  <span class="chart-title">Graph Traversal Execution Time</span>
+                  <span class="chart-tag">O(V + E log V)</span>
+                </div>
+                <svg class="dash-chart-svg" viewBox="0 0 320 80" fill="none" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="chartGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#635bff" stop-opacity="0.25"/>
+                      <stop offset="100%" stop-color="#635bff" stop-opacity="0.0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M 0 68 Q 50 62 100 48 T 200 32 T 270 16 T 320 8 L 320 80 L 0 80 Z" fill="url(#chartGlow)" />
+                  <path d="M 0 68 Q 50 62 100 48 T 200 32 T 270 16 T 320 8" stroke="#635bff" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                  <circle cx="100" cy="48" r="3.5" fill="#635bff" stroke="#ffffff" stroke-width="2" />
+                  <circle cx="200" cy="32" r="3.5" fill="#635bff" stroke="#ffffff" stroke-width="2" />
+                  <circle cx="270" cy="16" r="3.5" fill="#635bff" stroke="#ffffff" stroke-width="2" />
+                  <circle cx="320" cy="8" r="4" fill="#00d4ff" stroke="#ffffff" stroke-width="2" />
+                </svg>
+                <div class="chart-labels">
+                  <span>Input: N=10</span>
+                  <span>N=100</span>
+                  <span>N=500</span>
+                  <span>N=1000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Front Card: Profile & Verified Credentials -->
+          <div class="stripe-mockup-card">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <span class="mockup-domain">engineer.shalini-h.dev</span>
+            </div>
+
+            <div class="mockup-body">
+              <div class="mockup-portrait-row">
+                <img src="photo.jpeg" alt="Shalini H" class="mockup-avatar" width="96" height="110">
+                <div class="mockup-identity">
+                  <div class="mockup-name">Shalini H</div>
+                  <div class="mockup-role">Information Science & Engineering</div>
+                  <div class="mockup-college">NIE Mysore (Batch 2024-2028)</div>
+                  <div class="mockup-status-tag">
+                    <span class="status-pulse"></span>
+                    <span>Available for Internships</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mockup-stats-panel">
+                <div class="mockup-stat-cell">
+                  <span class="stat-cell-label">ACADEMIC CGPA</span>
+                  <span class="stat-cell-val highlight-blue">8.75 / 10</span>
+                </div>
+                <div class="mockup-stat-cell">
+                  <span class="stat-cell-label">VITEST UNIT TESTS</span>
+                  <span class="stat-cell-val highlight-indigo">196+ Passed</span>
+                </div>
+              </div>
+
+              <div class="mockup-action-strip">
+                <button type="button" class="btn-mockup-action copy-email-btn" data-email="shalinih6363841526@gmail.com">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-label">Copy Email</span>
+                </button>
+                <a href="Shalini-H-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-mockup-resume">
+                  <span>Resume PDF</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Metrics Bar: Spacious, Clean, Staggered -->
-    <section class="section-metrics" aria-label="Academic & Engineering Metrics">
+    <!-- Metrics Bar: Clean Stripe Slate & White Strip -->
+    <section class="section-metrics" aria-label="Engineering Performance Metrics">
       <div class="site-container">
         <div class="metrics-grid">
           <div class="metric-item reveal-on-scroll">
-            <div class="metric-value">8.75</div>
-            <div class="metric-label">Cumulative GPA (NIE Mysore)</div>
+            <div class="metric-number">8.75</div>
+            <div class="metric-title">Cumulative GPA</div>
+            <div class="metric-sub">Information Science at NIE Mysore</div>
           </div>
           <div class="metric-item reveal-on-scroll">
-            <div class="metric-value">196+</div>
-            <div class="metric-label">Automated Vitest Tests Authored</div>
+            <div class="metric-number">196+</div>
+            <div class="metric-title">Unit Tests Authored</div>
+            <div class="metric-sub">Automated Vitest test coverage</div>
           </div>
           <div class="metric-item reveal-on-scroll">
-            <div class="metric-value">17</div>
-            <div class="metric-label">Algorithms Visualized in AlgoTrace</div>
+            <div class="metric-number">17</div>
+            <div class="metric-title">Algorithms Engine</div>
+            <div class="metric-sub">Sorting, searching, and graph theory</div>
           </div>
           <div class="metric-item reveal-on-scroll">
-            <div class="metric-value">SIH '26</div>
-            <div class="metric-label">Smart India Hackathon Nominee</div>
+            <div class="metric-number">SIH '26</div>
+            <div class="metric-title">Smart India Hackathon</div>
+            <div class="metric-sub">Selected institutional nominee</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Selected Projects Section -->
+    <!-- Selected Projects Section: Stripe Card Grid -->
     <section class="section-projects" id="projects">
       <div class="site-container">
-        <div class="section-heading-center reveal-on-scroll">
-          <span class="section-eyebrow">PORTFOLIO</span>
-          <h2 class="section-title">Selected Engineering Work</h2>
-          <p class="section-subtitle">
-            Focused on deterministic state machines, pure algorithmic pipelines, and zero-backend web runtimes.
+        <div class="section-header-center reveal-on-scroll">
+          <span class="section-kicker">ENGINEERING SHOWCASE</span>
+          <h2 class="section-heading">Featured Systems & Projects</h2>
+          <p class="section-subheading">
+            Engineered with decoupled architecture, pure state transitions, and zero backend latency.
           </p>
 
-          <div class="project-filters" role="tablist" aria-label="Filter projects">
-            <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
-            <button type="button" class="filter-tab" data-filter="algorithm" role="tab" aria-selected="false">Algorithms</button>
-            <button type="button" class="filter-tab" data-filter="decision" role="tab" aria-selected="false">Decision Engines</button>
-            <button type="button" class="filter-tab" data-filter="systems" role="tab" aria-selected="false">Distributed State</button>
+          <div class="project-filter-pills" role="tablist" aria-label="Filter projects">
+            <button type="button" class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Systems</button>
+            <button type="button" class="filter-pill" data-filter="algorithm" role="tab" aria-selected="false">Algorithms</button>
+            <button type="button" class="filter-pill" data-filter="decision" role="tab" aria-selected="false">Decision Engines</button>
+            <button type="button" class="filter-pill" data-filter="systems" role="tab" aria-selected="false">Distributed State</button>
           </div>
         </div>
 
-        <div class="projects-list">
+        <div class="projects-grid-container">
           <!-- Project 1: AlgoTrace -->
-          <article class="project-showcase reveal-on-scroll" data-category="algorithm">
-            <div class="showcase-header">
-              <div class="showcase-tag-row">
-                <span class="showcase-tag">ALGORITHM VISUALIZATION ENGINE</span>
-                <span class="showcase-date">October 2026</span>
-              </div>
-              <h3 class="showcase-title">AlgoTrace: Interactive Algorithm Execution Visualizer</h3>
-              <p class="showcase-desc">
-                An interactive execution visualizer and educational platform for 17 sorting, searching, and graph algorithms. Built with a pure-function engine that precomputes immutable step traces, guaranteeing flawless forward and backward timeline replay without mutation bugs.
-              </p>
+          <article class="stripe-project-card reveal-on-scroll" data-category="algorithm">
+            <div class="card-badge-row">
+              <span class="badge-indigo">ALGORITHM VISUALIZER</span>
+              <span class="badge-date">October 2026</span>
             </div>
 
-            <!-- Visual Pipeline Blueprint -->
-            <div class="pipeline-card">
-              <div class="pipeline-header">ARCHITECTURE EXECUTION PIPELINE</div>
-              <div class="pipeline-track">
-                <div class="pipe-step">Input Array</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step">Precondition Validation</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step pipe-accent">Pure Execution Trace</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step">Deterministic Replay</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step">Reactive SVG Visualizer</div>
-              </div>
-            </div>
+            <h3 class="card-project-title">AlgoTrace: Interactive Algorithm Execution Visualizer</h3>
+            <p class="card-project-desc">
+              An interactive visualizer and educational execution engine for 17 sorting, searching, and graph algorithms. Built with pure-function engines producing immutable step traces for lossless timeline replay without mutation bugs.
+            </p>
 
-            <div class="showcase-specs-grid">
-              <div class="spec-card">
-                <div class="spec-heading">17 Algorithms Covered</div>
-                <p class="spec-text">Includes Dijkstra (tentative distances), Prim (MST accumulator), Bellman-Ford (cycle detection), Kahn Topological Sort, Quick Sort, and Merge Sort.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">Pure Immutable Engine</div>
-                <p class="spec-text">Decoupled execution engine produces immutable step snapshots, enabling instant scrubbing, pause, and step-backward navigation.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">Real-Time State Inspection</div>
-                <p class="spec-text">Interactive SVG canvas with auto-scrolling pseudocode, FIFO queues for BFS, and LIFO call stacks for DFS.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">117 Automated Vitest Tests</div>
-                <p class="spec-text">Validated across 4 suites covering mathematical invariants, boundary conditions, and state transitions.</p>
+            <div class="pipeline-blueprint">
+              <span class="blueprint-tag">SYSTEM EXECUTION PIPELINE</span>
+              <div class="pipeline-flow">
+                <span class="pipe-node">Array Input</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Validation Layer</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node pipe-highlight">Pure Trace Engine</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Deterministic Replay</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">SVG Visualizer</span>
               </div>
             </div>
 
-            <div class="showcase-footer">
-              <div class="tags-cluster">
-                <span class="tech-pill">React 18</span>
-                <span class="tech-pill">TypeScript 5</span>
-                <span class="tech-pill">Vite</span>
-                <span class="tech-pill">Tailwind CSS</span>
-                <span class="tech-pill">Vitest (117 Tests)</span>
-                <span class="tech-pill">Graph Theory</span>
+            <div class="card-specs-row">
+              <div class="spec-col">
+                <strong>17 Algorithms Covered</strong>
+                <p>Includes Dijkstra (tentative distances), Prim (MST accumulator), Bellman-Ford (cycle detection), Kahn's Topological Sort, Quick Sort, and Merge Sort.</p>
+              </div>
+              <div class="spec-col">
+                <strong>117 Automated Vitest Tests</strong>
+                <p>Tested across 4 complete suites verifying mathematical invariants, boundary conditions, and state transitions.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-row">
+              <div class="tech-tags">
+                <span class="tag-chip">React 18</span>
+                <span class="tag-chip">TypeScript 5</span>
+                <span class="tag-chip">Vite</span>
+                <span class="tag-chip">Tailwind CSS</span>
+                <span class="tag-chip">Vitest (117 Tests)</span>
+                <span class="tag-chip">Graph Theory</span>
               </div>
 
-              <div class="showcase-links">
-                <button type="button" class="btn-inspect" data-modal="modal-algotrace">
+              <div class="card-cta-group">
+                <button type="button" class="btn-card-spec" data-modal="modal-algotrace">
                   <span>Architecture Specs</span>
-                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </button>
-                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-terracotta">
-                  <span>GitHub Repository</span>
-                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
+                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-card-github">
+                  <span>GitHub</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </a>
               </div>
@@ -279,77 +375,64 @@
           </article>
 
           <!-- Project 2: CookPilot -->
-          <article class="project-showcase reveal-on-scroll" data-category="decision">
-            <div class="showcase-header">
-              <div class="showcase-tag-row">
-                <span class="showcase-tag">LOCAL-FIRST DECISION ENGINE</span>
-                <span class="showcase-date">October 2026</span>
-              </div>
-              <h3 class="showcase-title">CookPilot: Local-First Cooking Decision Engine</h3>
-              <p class="showcase-desc">
-                A deterministic, zero-backend kitchen intelligence engine that matches recipes from available pantry items using transparent weighted mathematical scoring, coupled with a finite state machine cooking cockpit and culinary error diagnosis.
-              </p>
+          <article class="stripe-project-card reveal-on-scroll" data-category="decision">
+            <div class="card-badge-row">
+              <span class="badge-indigo">LOCAL-FIRST DECISION ENGINE</span>
+              <span class="badge-date">October 2026</span>
             </div>
 
-            <!-- Visual Pipeline Blueprint -->
-            <div class="pipeline-card">
-              <div class="pipeline-header">ARCHITECTURE EXECUTION PIPELINE</div>
-              <div class="pipeline-track">
-                <div class="pipe-step">Pantry Items</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step pipe-accent">Weighted Scorer (85%/15%)</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step">Finite State Machine</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step">Web Audio Synthesizer</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step">Rule-Based Recovery</div>
-              </div>
-            </div>
+            <h3 class="card-project-title">CookPilot: Local-First Cooking Decision Engine</h3>
+            <p class="card-project-desc">
+              A deterministic, zero-backend kitchen intelligence engine that matches recipes from available pantry items using transparent weighted mathematical scoring, coupled with a finite state machine cooking cockpit and culinary error diagnosis.
+            </p>
 
-            <div class="showcase-specs-grid">
-              <div class="spec-card">
-                <div class="spec-heading">Weighted Matching Model</div>
-                <p class="spec-text">Allocates 85% score weight to required ingredients, credits valid culinary substitutions at 40% to 80%, and adds up to 15% bonus for garnishes.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">State-Machine Cockpit</div>
-                <p class="spec-text">Pure TypeScript finite state machine governing stages (IDLE, PREPARING, HEATING, COOKING, WAITING, COMPLETED) with strict bounds checking.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">Deterministic Diagnosis</div>
-                <p class="spec-text">Evaluator mapping common in-pan cooking mistakes (over-salting, scorched spices, tough texture) to culinary science recovery rules without LLM hallucinations.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">79 Automated Vitest Tests</div>
-                <p class="spec-text">Comprehensive test suite covering portion scaling mathematics, timer intervals, scoring bounds, and state transitions.</p>
+            <div class="pipeline-blueprint">
+              <span class="blueprint-tag">SYSTEM EXECUTION PIPELINE</span>
+              <div class="pipeline-flow">
+                <span class="pipe-node">Pantry Items</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node pipe-highlight">Weighted Scorer (85%/15%)</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">State Machine</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Web Audio Synthesizer</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Recovery Rules</span>
               </div>
             </div>
 
-            <div class="showcase-footer">
-              <div class="tags-cluster">
-                <span class="tech-pill">React 18</span>
-                <span class="tech-pill">TypeScript 5</span>
-                <span class="tech-pill">Vite</span>
-                <span class="tech-pill">Vitest (79 Tests)</span>
-                <span class="tech-pill">Web Audio API</span>
-                <span class="tech-pill">State Machine</span>
+            <div class="card-specs-row">
+              <div class="spec-col">
+                <strong>Weighted Matching Model</strong>
+                <p>Allocates 85% score weight to required ingredients, credits valid culinary substitutions at 40% to 80%, and adds up to 15% bonus for garnishes.</p>
+              </div>
+              <div class="spec-col">
+                <strong>79 Automated Vitest Tests</strong>
+                <p>Comprehensive test suite covering portion scaling mathematics, timer intervals, scoring bounds, and state transitions.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-row">
+              <div class="tech-tags">
+                <span class="tag-chip">React 18</span>
+                <span class="tag-chip">TypeScript 5</span>
+                <span class="tag-chip">Vite</span>
+                <span class="tag-chip">Vitest (79 Tests)</span>
+                <span class="tag-chip">Web Audio API</span>
+                <span class="tag-chip">State Machine</span>
               </div>
 
-              <div class="showcase-links">
-                <button type="button" class="btn-inspect" data-modal="modal-cookpilot">
+              <div class="card-cta-group">
+                <button type="button" class="btn-card-spec" data-modal="modal-cookpilot">
                   <span>Architecture Specs</span>
-                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </button>
-                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-terracotta">
-                  <span>GitHub Repository</span>
-                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
+                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-card-github">
+                  <span>GitHub</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </a>
               </div>
@@ -357,76 +440,63 @@
           </article>
 
           <!-- Project 3: CortX -->
-          <article class="project-showcase reveal-on-scroll" data-category="systems">
-            <div class="showcase-header">
-              <div class="showcase-tag-row">
-                <span class="showcase-tag">DISTRIBUTED CLIENT PLATFORM</span>
-                <span class="showcase-date">May 2026</span>
-              </div>
-              <h3 class="showcase-title">CortX: Real-Time Hospital Triage & Queue Management</h3>
-              <p class="showcase-desc">
-                A zero-backend distributed clinical workflow platform automating emergency triage, physician assignment, and pharmacy inventory across 5 integrated modules with multi-tab synchronized waiting-room displays.
-              </p>
+          <article class="stripe-project-card reveal-on-scroll" data-category="systems">
+            <div class="card-badge-row">
+              <span class="badge-indigo">DISTRIBUTED CLIENT PLATFORM</span>
+              <span class="badge-date">May 2026</span>
             </div>
 
-            <!-- Visual Pipeline Blueprint -->
-            <div class="pipeline-card">
-              <div class="pipeline-header">ARCHITECTURE EXECUTION PIPELINE</div>
-              <div class="pipeline-track">
-                <div class="pipe-step">Patient Arrival</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step pipe-accent">Priority Queue Triage</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step">Rolling-Average ETA</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step">BroadcastChannel Sync</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step">Waiting Room Display</div>
-              </div>
-            </div>
+            <h3 class="card-project-title">CortX: Real-Time Hospital Triage & Queue Management</h3>
+            <p class="card-project-desc">
+              A zero-backend distributed clinical workflow platform automating emergency triage, physician assignment, and pharmacy inventory across 5 integrated modules with multi-tab synchronized waiting-room displays.
+            </p>
 
-            <div class="showcase-specs-grid">
-              <div class="spec-card">
-                <div class="spec-heading">Priority Queue Scheduling</div>
-                <p class="spec-text">Ranks emergency cases dynamically by medical severity indices, automatically routing arrivals to available specialists.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">Rolling-Average Consultation ETA</div>
-                <p class="spec-text">Dynamically computes live waiting times based on a rolling-window average of the last 25 resolved patient consultations.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">Multi-Tab State Synchronization</div>
-                <p class="spec-text">Utilizes BroadcastChannel and Storage events to keep triage, doctor, and public waiting rooms synchronized in real time with 0ms server overhead.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">5 Integrated Modules</div>
-                <p class="spec-text">End-to-end workflow covering Patient Intake, Triage Nurse Station, Doctor Consultation, Pharmacy, and Public Display.</p>
+            <div class="pipeline-blueprint">
+              <span class="blueprint-tag">SYSTEM EXECUTION PIPELINE</span>
+              <div class="pipeline-flow">
+                <span class="pipe-node">Patient Arrival</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node pipe-highlight">Priority Queue</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Rolling-Average ETA</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">BroadcastChannel Sync</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Waiting Display</span>
               </div>
             </div>
 
-            <div class="showcase-footer">
-              <div class="tags-cluster">
-                <span class="tech-pill">JavaScript (ES6+)</span>
-                <span class="tech-pill">BroadcastChannel API</span>
-                <span class="tech-pill">Storage Events</span>
-                <span class="tech-pill">Priority Queues</span>
-                <span class="tech-pill">HTML5 / CSS3</span>
+            <div class="card-specs-row">
+              <div class="spec-col">
+                <strong>Priority Queue Scheduling</strong>
+                <p>Ranks emergency cases dynamically by medical severity indices, automatically routing arrivals to available specialists.</p>
+              </div>
+              <div class="spec-col">
+                <strong>Multi-Tab State Synchronization</strong>
+                <p>Utilizes BroadcastChannel and Storage events to keep triage, doctor, and public waiting rooms synchronized with 0ms server overhead.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-row">
+              <div class="tech-tags">
+                <span class="tag-chip">JavaScript (ES6+)</span>
+                <span class="tag-chip">BroadcastChannel API</span>
+                <span class="tag-chip">Storage Events</span>
+                <span class="tag-chip">Priority Queues</span>
+                <span class="tag-chip">HTML5 / CSS3</span>
               </div>
 
-              <div class="showcase-links">
-                <button type="button" class="btn-inspect" data-modal="modal-cortx">
+              <div class="card-cta-group">
+                <button type="button" class="btn-card-spec" data-modal="modal-cortx">
                   <span>Architecture Specs</span>
-                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </button>
-                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-terracotta">
-                  <span>GitHub Repository</span>
-                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
+                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-card-github">
+                  <span>GitHub</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </a>
               </div>
@@ -434,51 +504,41 @@
           </article>
 
           <!-- Project 4: BharatResQ -->
-          <article class="project-showcase reveal-on-scroll" data-category="systems">
-            <div class="showcase-header">
-              <div class="showcase-tag-row">
-                <span class="showcase-tag tag-ochre">HACKATHON INNOVATION</span>
-                <span class="showcase-date">Smart India Hackathon 2026</span>
-              </div>
-              <h3 class="showcase-title">BharatResQ: AI-Based Landslide Risk Early Warning System</h3>
-              <p class="showcase-desc">
-                Selected at the college level to represent NIE Mysore in the nationwide Smart India Hackathon 2026. Built a full-stack early hazard monitoring platform designed for landslide-prone terrains in the Northeast Region of India.
-              </p>
+          <article class="stripe-project-card reveal-on-scroll" data-category="systems">
+            <div class="card-badge-row">
+              <span class="badge-gold">HACKATHON INNOVATION</span>
+              <span class="badge-date">Smart India Hackathon 2026</span>
             </div>
 
-            <div class="showcase-specs-grid">
-              <div class="spec-card">
-                <div class="spec-heading">Geohazard Synthesis</div>
-                <p class="spec-text">Synthesizes rainfall metrics, geological slope angles, and soil saturation readings to establish predictive danger thresholds.</p>
+            <h3 class="card-project-title">BharatResQ: AI-Based Landslide Risk Early Warning System</h3>
+            <p class="card-project-desc">
+              Selected at the college level to represent NIE Mysore in the nationwide Smart India Hackathon 2026. Built a full-stack early hazard monitoring platform designed for landslide-prone terrains in the Northeast Region of India.
+            </p>
+
+            <div class="card-specs-row">
+              <div class="spec-col">
+                <strong>Geohazard Telemetry</strong>
+                <p>Synthesizes rainfall metrics, geological slope angles, and soil saturation readings to establish predictive danger thresholds.</p>
               </div>
-              <div class="spec-card">
-                <div class="spec-heading">Zonal Risk Mapping</div>
-                <p class="spec-text">Categorizes terrain into clear normal, advisory, and emergency evacuation levels for rapid response teams.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">Incident Communication</div>
-                <p class="spec-text">Establishes real-time alert dispatch between regional monitoring centers and vulnerable settlements.</p>
-              </div>
-              <div class="spec-card">
-                <div class="spec-heading">Institutional Selection</div>
-                <p class="spec-text">Selected by the university evaluation jury to represent the institution at the national SIH level.</p>
+              <div class="spec-col">
+                <strong>Institutional Selection</strong>
+                <p>Selected by the university evaluation jury to represent the institution at the national SIH level.</p>
               </div>
             </div>
 
-            <div class="showcase-footer">
-              <div class="tags-cluster">
-                <span class="tech-pill">SIH 2026 Nominee</span>
-                <span class="tech-pill">Geohazard Telemetry</span>
-                <span class="tech-pill">Full-Stack Prototype</span>
-                <span class="tech-pill">Team Leadership</span>
+            <div class="card-footer-row">
+              <div class="tech-tags">
+                <span class="tag-chip">SIH 2026 Nominee</span>
+                <span class="tag-chip">Geohazard Telemetry</span>
+                <span class="tag-chip">Full-Stack Prototype</span>
+                <span class="tag-chip">Team Leadership</span>
               </div>
 
-              <div class="showcase-links">
-                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-terracotta">
-                  <span>GitHub Repository</span>
-                  <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
+              <div class="card-cta-group">
+                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-card-github">
+                  <span>GitHub</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </a>
               </div>
@@ -488,72 +548,72 @@
       </div>
     </section>
 
-    <!-- Engineering Principles -->
+    <!-- Engineering Methodology: Clean White Cards on Slate Light -->
     <section class="section-philosophy" id="philosophy">
       <div class="site-container">
-        <div class="section-heading-left reveal-on-scroll">
-          <span class="section-eyebrow">ENGINEERING VALUES</span>
-          <h2 class="section-title">Core Architecture Principles</h2>
-          <p class="section-subtitle">
+        <div class="section-header-left reveal-on-scroll">
+          <span class="section-kicker">ENGINEERING VALUES</span>
+          <h2 class="section-heading">Core Architecture Principles</h2>
+          <p class="section-subheading">
             The foundational engineering rules guiding how I design and construct software systems.
           </p>
         </div>
 
         <div class="principles-grid">
-          <div class="principle-card reveal-on-scroll">
-            <div class="principle-number">01</div>
-            <h3 class="principle-title">Pure Execution & Determinism</h3>
-            <p class="principle-text">
+          <div class="principle-box reveal-on-scroll">
+            <div class="principle-index">01</div>
+            <h3 class="principle-name">Pure Execution & Determinism</h3>
+            <p class="principle-desc">
               Algorithms and business calculations run as pure functions without mutable side-effects. By returning immutable step snapshots, user interfaces achieve deterministic replay, accurate backward stepping, and zero state drift.
             </p>
-            <div class="principle-footnote">Implemented in AlgoTrace execution traces</div>
+            <div class="principle-label">Implemented in AlgoTrace execution traces</div>
           </div>
 
-          <div class="principle-card reveal-on-scroll">
-            <div class="principle-number">02</div>
-            <h3 class="principle-title">Finite State Machine Guards</h3>
-            <p class="principle-text">
+          <div class="principle-box reveal-on-scroll">
+            <div class="principle-index">02</div>
+            <h3 class="principle-name">Finite State Machine Guards</h3>
+            <p class="principle-desc">
               Complex transitions are modeled as formal state machines with strict bounds checking rather than messy boolean variables. Illegal states, race conditions, and orphaned timer intervals are mathematically impossible.
             </p>
-            <div class="principle-footnote">Implemented in CookPilot cooking cockpit</div>
+            <div class="principle-label">Implemented in CookPilot cooking cockpit</div>
           </div>
 
-          <div class="principle-card reveal-on-scroll">
-            <div class="principle-number">03</div>
-            <h3 class="principle-title">Local-First Architecture</h3>
-            <p class="principle-text">
+          <div class="principle-box reveal-on-scroll">
+            <div class="principle-index">03</div>
+            <h3 class="principle-name">Local-First Architecture</h3>
+            <p class="principle-desc">
               Harnessing modern browser APIs (BroadcastChannel, Web Audio, Storage events, Web Workers) to run systems locally. Eliminating server roundtrips gives instant user responsiveness and complete offline capability.
             </p>
-            <div class="principle-footnote">Implemented in CortX multi-station sync</div>
+            <div class="principle-label">Implemented in CortX multi-station sync</div>
           </div>
 
-          <div class="principle-card reveal-on-scroll">
-            <div class="principle-number">04</div>
-            <h3 class="principle-title">Automated Verification</h3>
-            <p class="principle-text">
+          <div class="principle-box reveal-on-scroll">
+            <div class="principle-index">04</div>
+            <h3 class="principle-name">Automated Verification</h3>
+            <p class="principle-desc">
               Testing is an integral part of the architecture, not an afterthought. With 196+ automated tests across projects, mathematical bounds, edge cases, and state transitions are systematically verified.
             </p>
-            <div class="principle-footnote">Validated with Vitest test suites</div>
+            <div class="principle-label">Validated with Vitest test suites</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Matrix Section -->
+    <!-- Skills Matrix Section: Stripe Style Grid -->
     <section class="section-skills" id="skills">
       <div class="site-container">
-        <div class="section-heading-left reveal-on-scroll">
-          <span class="section-eyebrow">TECHNICAL STACK</span>
-          <h2 class="section-title">Skills & Competencies</h2>
-          <p class="section-subtitle">
+        <div class="section-header-left reveal-on-scroll">
+          <span class="section-kicker">TECHNICAL STACK</span>
+          <h2 class="section-heading">Skills & Competencies</h2>
+          <p class="section-subheading">
             A structured breakdown of programming languages, frontend tools, testing frameworks, and foundational computer science topics.
           </p>
         </div>
 
-        <div class="skills-columns">
-          <div class="skill-column reveal-on-scroll">
-            <div class="skill-cat-title">Programming Languages</div>
-            <ul class="skill-list">
+        <div class="skills-grid-wrapper">
+          <div class="skills-card-col reveal-on-scroll">
+            <div class="col-heading">Programming Languages</div>
+            <ul class="col-list">
               <li>
                 <strong>Java</strong>
                 <span>Object-Oriented Programming, Advanced Java, Collections, Multi-threading</span>
@@ -577,9 +637,9 @@
             </ul>
           </div>
 
-          <div class="skill-column reveal-on-scroll">
-            <div class="skill-cat-title">Frontend Engineering</div>
-            <ul class="skill-list">
+          <div class="skills-card-col reveal-on-scroll">
+            <div class="col-heading">Frontend Engineering</div>
+            <ul class="col-list">
               <li>
                 <strong>React.js</strong>
                 <span>Custom hooks, finite state machines, component architecture</span>
@@ -603,9 +663,9 @@
             </ul>
           </div>
 
-          <div class="skill-column reveal-on-scroll">
-            <div class="skill-cat-title">Testing & Developer Tools</div>
-            <ul class="skill-list">
+          <div class="skills-card-col reveal-on-scroll">
+            <div class="col-heading">Testing & Developer Tools</div>
+            <ul class="col-list">
               <li>
                 <strong>Vitest</strong>
                 <span>Unit testing pure functions, snapshot testing, 196+ tests authored</span>
@@ -629,9 +689,9 @@
             </ul>
           </div>
 
-          <div class="skill-column reveal-on-scroll">
-            <div class="skill-cat-title">Computer Science Core</div>
-            <ul class="skill-list">
+          <div class="skills-card-col reveal-on-scroll">
+            <div class="col-heading">Computer Science Core</div>
+            <ul class="col-list">
               <li>
                 <strong>Data Structures & Algorithms</strong>
                 <span>Trees, heaps, stacks, queues, hash tables, sorting/searching paradigms</span>
@@ -661,84 +721,79 @@
     <!-- Education Section -->
     <section class="section-education" id="education">
       <div class="site-container">
-        <div class="section-heading-left reveal-on-scroll">
-          <span class="section-eyebrow">ACADEMIC BACKGROUND</span>
-          <h2 class="section-title">Education & Credentials</h2>
+        <div class="section-header-left reveal-on-scroll">
+          <span class="section-kicker">ACADEMIC BACKGROUND</span>
+          <h2 class="section-heading">Education & Credentials</h2>
         </div>
 
-        <div class="education-panel reveal-on-scroll">
-          <div class="edu-top">
+        <div class="education-stripe-panel reveal-on-scroll">
+          <div class="edu-top-row">
             <div>
-              <h3 class="edu-degree">Bachelor of Engineering (B.E.) in Information Science and Engineering</h3>
-              <div class="edu-school">The National Institute of Engineering (NIE), Mysore (North Campus)</div>
+              <h3 class="edu-degree-title">Bachelor of Engineering (B.E.) in Information Science and Engineering</h3>
+              <div class="edu-school-name">The National Institute of Engineering (NIE), Mysore (North Campus)</div>
             </div>
-            <div class="edu-gpa-badge">
-              <span class="gpa-tag">CGPA</span>
-              <span class="gpa-val">8.75 / 10.0</span>
+            <div class="edu-cgpa-pill">
+              <span class="cgpa-caption">CGPA</span>
+              <span class="cgpa-digits">8.75 / 10.0</span>
             </div>
           </div>
 
-          <div class="edu-timeline">
+          <div class="edu-timeline-strip">
             <span>Batch: 2024 - 2028 (Currently in Year 3 / 5th Semester)</span>
-            <span class="edu-sep">•</span>
+            <span class="edu-bullet">•</span>
             <span>Mysore, Karnataka, India</span>
-            <span class="edu-sep">•</span>
-            <span class="text-terracotta">First Class with Distinction</span>
+            <span class="edu-bullet">•</span>
+            <span class="edu-highlight">First Class with Distinction</span>
           </div>
 
-          <p class="edu-notes">
+          <p class="edu-summary-p">
             Maintaining a high academic ranking across departmental semesters. Coursework emphasizes strong mathematical foundations in algorithms, database engineering, operating systems, and object-oriented design.
           </p>
 
-          <div class="coursework-container">
+          <div class="coursework-box">
             <div class="coursework-title">Relevant Coursework:</div>
-            <div class="coursework-chips">
-              <span class="chip">Data Structures & Algorithms</span>
-              <span class="chip">Design and Analysis of Algorithms</span>
-              <span class="chip">Advanced Java Programming</span>
-              <span class="chip">Graph Theory & Discrete Math</span>
-              <span class="chip">Database Management Systems (MySQL)</span>
-              <span class="chip">Operating Systems</span>
-              <span class="chip">Computer Networks</span>
-              <span class="chip">Computer Architecture</span>
+            <div class="coursework-badges">
+              <span class="course-chip">Data Structures & Algorithms</span>
+              <span class="course-chip">Design and Analysis of Algorithms</span>
+              <span class="course-chip">Advanced Java Programming</span>
+              <span class="course-chip">Graph Theory & Discrete Math</span>
+              <span class="course-chip">Database Management Systems (MySQL)</span>
+              <span class="course-chip">Operating Systems</span>
+              <span class="course-chip">Computer Networks</span>
+              <span class="course-chip">Computer Architecture</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section: Stripe Dark Blue Callout -->
     <section class="section-contact" id="contact">
       <div class="site-container">
-        <div class="contact-card reveal-on-scroll">
-          <div class="contact-content">
-            <span class="section-eyebrow">GET IN TOUCH</span>
-            <h2 class="contact-title">Let's talk about engineering roles.</h2>
-            <p class="contact-text">
-              I am actively seeking software engineering internships and full-time placement opportunities where code quality, algorithmic rigor, and thoughtful user experiences are valued.
+        <div class="contact-banner-card reveal-on-scroll">
+          <div class="contact-content-inner">
+            <span class="banner-kicker">READY TO CONNECT?</span>
+            <h2 class="banner-heading">Let's build software together.</h2>
+            <p class="banner-sub">
+              I am actively interviewing for software engineering internships and full-time placement roles where code quality, algorithmic rigor, and thoughtful user experiences are valued.
             </p>
 
-            <div class="contact-buttons">
-              <a href="mailto:shalinih6363841526@gmail.com" class="btn-primary">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
+            <div class="banner-actions">
+              <a href="mailto:shalinih6363841526@gmail.com" class="btn-banner-primary">
+                <span>Send Direct Email</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
-                <span>Email Shalini</span>
               </a>
 
-              <a href="Shalini-H-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <line x1="16" y1="13" x2="8" y2="13"></line>
-                  <line x1="16" y1="17" x2="8" y2="17"></line>
-                  <polyline points="10 9 9 9 8 9"></polyline>
-                </svg>
+              <a href="Shalini-H-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-banner-secondary">
                 <span>Download Resume</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
               </a>
 
-              <button type="button" class="btn-ghost copy-email-btn" data-email="shalinih6363841526@gmail.com">
+              <button type="button" class="btn-banner-ghost copy-email-btn" data-email="shalinih6363841526@gmail.com">
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                   <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -747,14 +802,14 @@
               </button>
             </div>
 
-            <div class="contact-links-row">
-              <a href="mailto:shalinih6363841526@gmail.com" class="contact-direct-link">shalinih6363841526@gmail.com</a>
-              <span class="contact-link-sep">•</span>
-              <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="contact-direct-link">github.com/Shalini-H</a>
-              <span class="contact-link-sep">•</span>
-              <a href="https://www.linkedin.com/in/shalinih0509/" target="_blank" rel="noopener noreferrer" class="contact-direct-link">linkedin.com/in/shalinih0509</a>
-              <span class="contact-link-sep">•</span>
-              <span class="contact-location">Mysore, Karnataka</span>
+            <div class="banner-links-row">
+              <a href="mailto:shalinih6363841526@gmail.com" class="banner-link">shalinih6363841526@gmail.com</a>
+              <span class="banner-sep">•</span>
+              <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="banner-link">github.com/Shalini-H</a>
+              <span class="banner-sep">•</span>
+              <a href="https://www.linkedin.com/in/shalinih0509/" target="_blank" rel="noopener noreferrer" class="banner-link">linkedin.com/in/shalinih0509</a>
+              <span class="banner-sep">•</span>
+              <span class="banner-location">Mysore, Karnataka, India</span>
             </div>
           </div>
         </div>
@@ -855,8 +910,8 @@ Reactive Presentation Layer (ArrayVisualizer, SearchVisualizer, GraphVisualizer,
       </div>
 
       <div class="modal-foot">
-        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="btn-primary">View on GitHub</a>
-        <button type="button" class="btn-ghost" data-close-modal>Close</button>
+        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="btn-stripe-dark">View on GitHub</a>
+        <button type="button" class="btn-card-spec" data-close-modal>Close</button>
       </div>
     </div>
   </div>
@@ -913,8 +968,8 @@ COMPLETED <──(Finish All Steps)── COOKING <─────────�
       </div>
 
       <div class="modal-foot">
-        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="btn-primary">View on GitHub</a>
-        <button type="button" class="btn-ghost" data-close-modal>Close</button>
+        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="btn-stripe-dark">View on GitHub</a>
+        <button type="button" class="btn-card-spec" data-close-modal>Close</button>
       </div>
     </div>
   </div>
@@ -959,8 +1014,8 @@ ETA_Department = (Σ Duration of last 25 resolved consultations in Department / 
       </div>
 
       <div class="modal-foot">
-        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="btn-primary">View on GitHub</a>
-        <button type="button" class="btn-ghost" data-close-modal>Close</button>
+        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="btn-stripe-dark">View on GitHub</a>
+        <button type="button" class="btn-card-spec" data-close-modal>Close</button>
       </div>
     </div>
   </div>

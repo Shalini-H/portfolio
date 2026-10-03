@@ -56,11 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (siteHeader) {
       if (window.scrollY > 20) {
-        siteHeader.style.borderBottomColor = 'var(--border-warm-strong)';
-        siteHeader.style.boxShadow = '0 4px 16px rgba(42, 33, 24, 0.04)';
+        siteHeader.classList.add('is-scrolled');
       } else {
-        siteHeader.style.borderBottomColor = 'var(--border-warm)';
-        siteHeader.style.boxShadow = 'none';
+        siteHeader.classList.remove('is-scrolled');
       }
     }
   }
@@ -118,8 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // 6. Project Filter Tabs
-  const filterTabs = document.querySelectorAll('.filter-tab, .filter-btn');
-  const projectItems = document.querySelectorAll('.project-showcase, .project-card');
+  const filterTabs = document.querySelectorAll('.filter-pill, .filter-tab, .filter-btn');
+  const projectItems = document.querySelectorAll('.stripe-project-card, .project-showcase, .project-card');
 
   filterTabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -136,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
       projectItems.forEach(item => {
         const category = item.getAttribute('data-category');
         if (filterValue === 'all' || category === filterValue) {
-          item.style.display = 'block';
+          item.style.display = '';
           item.classList.add('is-revealed');
         } else {
           item.style.display = 'none';
