@@ -1,9 +1,12 @@
 /* ==========================================================================
    Shalini H - Systems Portfolio JavaScript
    Apple Minimalism & CookPilot Editorial Theme Interaction Driver
+   Animations: Scroll Reveal, Smooth Parallax & 3D Interactive Card Tilt
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   // 1. Mobile Navigation Toggle
   const mobileToggle = document.getElementById('mobileToggle');
   const navMenu = document.getElementById('navMenu');
@@ -54,8 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (siteHeader) {
       if (window.scrollY > 20) {
         siteHeader.style.borderBottomColor = 'var(--border-warm-strong)';
+        siteHeader.style.boxShadow = '0 4px 16px rgba(42, 33, 24, 0.04)';
       } else {
         siteHeader.style.borderBottomColor = 'var(--border-warm)';
+        siteHeader.style.boxShadow = 'none';
       }
     }
   }
@@ -63,7 +68,94 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveNavLink, { passive: true });
   updateActiveNavLink();
 
-  // 3. Project Filter Tabs
+  // 3. Scroll Reveal Animations (IntersectionObserver)
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+
+  if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('is-revealed'));
+  }
+
+  // 4. Subtle Smooth Scroll Parallax Driver
+  const parallaxNodes = document.querySelectorAll('[data-parallax]');
+
+  if (!prefersReducedMotion && parallaxNodes.length > 0) {
+    let ticking = false;
+
+    function applyScrollParallax() {
+      const scrollY = window.pageYOffset;
+
+      parallaxNodes.forEach(node => {
+        const speed = parseFloat(node.getAttribute('data-parallax')) || 0.05;
+        const offset = scrollY * speed;
+        node.style.transform = `translate3d(0, ${offset.toFixed(2)}px, 0)`;
+      });
+
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(applyScrollParallax);
+        ticking = true;
+      }
+    }, { passive: true });
+  }
+
+  // 5. 3D Interactive Card Tilt & Mouse Spotlight Glare
+  const tiltCards = document.querySelectorAll('.tilt-card');
+
+  if (!prefersReducedMotion && window.matchMedia('(pointer: fine)').matches) {
+    tiltCards.forEach(card => {
+      let isHovered = false;
+
+      card.addEventListener('mouseenter', () => {
+        isHovered = true;
+      });
+
+      card.addEventListener('mousemove', (e) => {
+        if (!isHovered) return;
+
+        const rect = card.getBoundingClientRect();
+        const clientX = e.clientX - rect.left;
+        const clientY = e.clientY - rect.top;
+
+        // Mouse Spotlight Coordinates
+        card.style.setProperty('--mouse-x', `${clientX}px`);
+        card.style.setProperty('--mouse-y', `${clientY}px`);
+
+        // Subtle Tilt Angle
+        const xPercent = (clientX / rect.width) - 0.5;
+        const yPercent = (clientY / rect.height) - 0.5;
+
+        const rotateX = (-yPercent * 6).toFixed(2);
+        const rotateY = (xPercent * 6).toFixed(2);
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-3px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        isHovered = false;
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+      });
+    });
+  }
+
+  // 6. Project Filter Tabs
   const filterTabs = document.querySelectorAll('.filter-tab, .filter-btn');
   const projectItems = document.querySelectorAll('.project-showcase, .project-card');
 
@@ -83,6 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const category = item.getAttribute('data-category');
         if (filterValue === 'all' || category === filterValue) {
           item.style.display = 'block';
+          item.classList.add('is-revealed');
         } else {
           item.style.display = 'none';
         }
@@ -90,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Toast Notification
+  // 7. Toast Notification System
   const toastNotice = document.getElementById('toastNotice');
   const toastMessage = document.getElementById('toastMessage');
   let toastTimer = null;
@@ -108,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2800);
   }
 
-  // 5. One-Click Copy Email Action
+  // 8. One-Click Copy Email Action
   const copyButtons = document.querySelectorAll('.copy-email-btn');
 
   copyButtons.forEach(btn => {
@@ -142,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. Architecture Specification Modals
+  // 9. Architecture Specification Modals
   const specButtons = document.querySelectorAll('[data-modal]');
   const specModals = document.querySelectorAll('.spec-modal');
   let lastFocusedElement = null;

@@ -53,6 +53,12 @@
 <body>
   <a href="#main-content" class="skip-to-content">Skip to content</a>
 
+  <!-- Ambient Parallax Backdrop Rules -->
+  <div class="ambient-parallax-layer" aria-hidden="true">
+    <div class="parallax-line parallax-line-1" data-parallax="0.08"></div>
+    <div class="parallax-line parallax-line-2" data-parallax="-0.06"></div>
+  </div>
+
   <!-- Minimal Apple-Style Navigation Bar -->
   <header class="site-header" id="siteHeader">
     <div class="site-container header-inner">
@@ -90,10 +96,10 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section: Apple Breathing Layout -->
+    <!-- Hero Section: Apple Breathing Layout with Parallax Depth -->
     <section class="section-hero" id="hero">
       <div class="site-container hero-container">
-        <div class="hero-content">
+        <div class="hero-content reveal-on-scroll">
           <div class="eyebrow-pill">
             <span class="eyebrow-dot" aria-hidden="true"></span>
             <span>NIE Mysore · Information Science (2024-2028) · CGPA 8.75</span>
@@ -139,8 +145,9 @@
           </div>
         </div>
 
-        <div class="hero-portrait-wrapper">
-          <div class="portrait-card">
+        <div class="hero-portrait-wrapper reveal-on-scroll" data-parallax="0.04">
+          <div class="portrait-card tilt-card" id="portraitCard">
+            <div class="card-spotlight" aria-hidden="true"></div>
             <img src="photo.jpeg" alt="Shalini H" class="portrait-image" width="380" height="460" loading="eager">
             <div class="portrait-caption">
               <div class="caption-title">Shalini H</div>
@@ -151,23 +158,23 @@
       </div>
     </section>
 
-    <!-- Metrics Bar: Spacious and Clean -->
+    <!-- Metrics Bar: Spacious, Clean, Staggered -->
     <section class="section-metrics" aria-label="Academic & Engineering Metrics">
       <div class="site-container">
         <div class="metrics-grid">
-          <div class="metric-item">
+          <div class="metric-item reveal-on-scroll">
             <div class="metric-value">8.75</div>
             <div class="metric-label">Cumulative GPA (NIE Mysore)</div>
           </div>
-          <div class="metric-item">
+          <div class="metric-item reveal-on-scroll">
             <div class="metric-value">196+</div>
             <div class="metric-label">Automated Vitest Tests Authored</div>
           </div>
-          <div class="metric-item">
+          <div class="metric-item reveal-on-scroll">
             <div class="metric-value">17</div>
             <div class="metric-label">Algorithms Visualized in AlgoTrace</div>
           </div>
-          <div class="metric-item">
+          <div class="metric-item reveal-on-scroll">
             <div class="metric-value">SIH '26</div>
             <div class="metric-label">Smart India Hackathon Nominee</div>
           </div>
@@ -178,7 +185,7 @@
     <!-- Selected Projects Section -->
     <section class="section-projects" id="projects">
       <div class="site-container">
-        <div class="section-heading-center">
+        <div class="section-heading-center reveal-on-scroll">
           <span class="section-eyebrow">PORTFOLIO</span>
           <h2 class="section-title">Selected Engineering Work</h2>
           <p class="section-subtitle">
@@ -195,7 +202,8 @@
 
         <div class="projects-list">
           <!-- Project 1: AlgoTrace -->
-          <article class="project-showcase" data-category="algorithm">
+          <article class="project-showcase tilt-card reveal-on-scroll" data-category="algorithm">
+            <div class="card-spotlight" aria-hidden="true"></div>
             <div class="showcase-header">
               <div class="showcase-tag-row">
                 <span class="showcase-tag">ALGORITHM VISUALIZATION ENGINE</span>
@@ -273,7 +281,8 @@
           </article>
 
           <!-- Project 2: CookPilot -->
-          <article class="project-showcase" data-category="decision">
+          <article class="project-showcase tilt-card reveal-on-scroll" data-category="decision">
+            <div class="card-spotlight" aria-hidden="true"></div>
             <div class="showcase-header">
               <div class="showcase-tag-row">
                 <span class="showcase-tag">LOCAL-FIRST DECISION ENGINE</span>
@@ -351,7 +360,8 @@
           </article>
 
           <!-- Project 3: CortX -->
-          <article class="project-showcase" data-category="systems">
+          <article class="project-showcase tilt-card reveal-on-scroll" data-category="systems">
+            <div class="card-spotlight" aria-hidden="true"></div>
             <div class="showcase-header">
               <div class="showcase-tag-row">
                 <span class="showcase-tag">DISTRIBUTED CLIENT PLATFORM</span>
@@ -428,7 +438,8 @@
           </article>
 
           <!-- Project 4: BharatResQ -->
-          <article class="project-showcase" data-category="systems">
+          <article class="project-showcase tilt-card reveal-on-scroll" data-category="systems">
+            <div class="card-spotlight" aria-hidden="true"></div>
             <div class="showcase-header">
               <div class="showcase-tag-row">
                 <span class="showcase-tag tag-ochre">HACKATHON INNOVATION</span>
@@ -482,10 +493,10 @@
       </div>
     </section>
 
-    <!-- Engineering Principles: Clean & Spacious -->
+    <!-- Engineering Principles -->
     <section class="section-philosophy" id="philosophy">
       <div class="site-container">
-        <div class="section-heading-left">
+        <div class="section-heading-left reveal-on-scroll">
           <span class="section-eyebrow">ENGINEERING VALUES</span>
           <h2 class="section-title">Core Architecture Principles</h2>
           <p class="section-subtitle">
@@ -494,7 +505,8 @@
         </div>
 
         <div class="principles-grid">
-          <div class="principle-card">
+          <div class="principle-card tilt-card reveal-on-scroll">
+            <div class="card-spotlight" aria-hidden="true"></div>
             <div class="principle-number">01</div>
             <h3 class="principle-title">Pure Execution & Determinism</h3>
             <p class="principle-text">
@@ -503,7 +515,8 @@
             <div class="principle-footnote">Implemented in AlgoTrace execution traces</div>
           </div>
 
-          <div class="principle-card">
+          <div class="principle-card tilt-card reveal-on-scroll">
+            <div class="card-spotlight" aria-hidden="true"></div>
             <div class="principle-number">02</div>
             <h3 class="principle-title">Finite State Machine Guards</h3>
             <p class="principle-text">
@@ -512,7 +525,8 @@
             <div class="principle-footnote">Implemented in CookPilot cooking cockpit</div>
           </div>
 
-          <div class="principle-card">
+          <div class="principle-card tilt-card reveal-on-scroll">
+            <div class="card-spotlight" aria-hidden="true"></div>
             <div class="principle-number">03</div>
             <h3 class="principle-title">Local-First Architecture</h3>
             <p class="principle-text">
@@ -521,7 +535,8 @@
             <div class="principle-footnote">Implemented in CortX multi-station sync</div>
           </div>
 
-          <div class="principle-card">
+          <div class="principle-card tilt-card reveal-on-scroll">
+            <div class="card-spotlight" aria-hidden="true"></div>
             <div class="principle-number">04</div>
             <h3 class="principle-title">Automated Verification</h3>
             <p class="principle-text">
@@ -536,7 +551,7 @@
     <!-- Skills Matrix Section -->
     <section class="section-skills" id="skills">
       <div class="site-container">
-        <div class="section-heading-left">
+        <div class="section-heading-left reveal-on-scroll">
           <span class="section-eyebrow">TECHNICAL STACK</span>
           <h2 class="section-title">Skills & Competencies</h2>
           <p class="section-subtitle">
@@ -545,7 +560,7 @@
         </div>
 
         <div class="skills-columns">
-          <div class="skill-column">
+          <div class="skill-column reveal-on-scroll">
             <div class="skill-cat-title">Programming Languages</div>
             <ul class="skill-list">
               <li>
@@ -571,7 +586,7 @@
             </ul>
           </div>
 
-          <div class="skill-column">
+          <div class="skill-column reveal-on-scroll">
             <div class="skill-cat-title">Frontend Engineering</div>
             <ul class="skill-list">
               <li>
@@ -597,7 +612,7 @@
             </ul>
           </div>
 
-          <div class="skill-column">
+          <div class="skill-column reveal-on-scroll">
             <div class="skill-cat-title">Testing & Developer Tools</div>
             <ul class="skill-list">
               <li>
@@ -623,7 +638,7 @@
             </ul>
           </div>
 
-          <div class="skill-column">
+          <div class="skill-column reveal-on-scroll">
             <div class="skill-cat-title">Computer Science Core</div>
             <ul class="skill-list">
               <li>
@@ -655,12 +670,13 @@
     <!-- Education Section -->
     <section class="section-education" id="education">
       <div class="site-container">
-        <div class="section-heading-left">
+        <div class="section-heading-left reveal-on-scroll">
           <span class="section-eyebrow">ACADEMIC BACKGROUND</span>
           <h2 class="section-title">Education & Credentials</h2>
         </div>
 
-        <div class="education-panel">
+        <div class="education-panel tilt-card reveal-on-scroll">
+          <div class="card-spotlight" aria-hidden="true"></div>
           <div class="edu-top">
             <div>
               <h3 class="edu-degree">Bachelor of Engineering (B.E.) in Information Science and Engineering</h3>
@@ -701,10 +717,11 @@
       </div>
     </section>
 
-    <!-- Contact Section: Apple Minimalist Style -->
+    <!-- Contact Section -->
     <section class="section-contact" id="contact">
       <div class="site-container">
-        <div class="contact-card">
+        <div class="contact-card tilt-card reveal-on-scroll">
+          <div class="card-spotlight" aria-hidden="true"></div>
           <div class="contact-content">
             <span class="section-eyebrow">GET IN TOUCH</span>
             <h2 class="contact-title">Let's talk about engineering roles.</h2>
