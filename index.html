@@ -1,489 +1,811 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shalini H | Computer Engineering Student & Aspiring Software Engineer</title>
-  <meta name="description" content="Portfolio of Shalini H - 5th Sem Computer Engineering Student at NIE Mysore (CGPA: 8.75). Focused on Data Structures & Algorithms, OOPs, C, Java, Python, and Frontend Development." />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shalini H | Information Science Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Shalini H, Information Science & Engineering student at NIE Mysore (CGPA: 8.75). Architecting deterministic algorithm visualizers, local-first web engines, and reactive frontend systems.">
+  <meta name="author" content="Shalini H">
+  <meta name="theme-color" content="#635bff">
 
-  <!-- Google Fonts: Inter & Outfit -->
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shalini H | Information Science Engineer">
+  <meta property="og:description" content="Information Science & Engineering undergraduate at NIE Mysore. Creator of AlgoTrace, CookPilot, and CortX.">
+  <meta property="og:image" content="photo.jpeg">
+
+  <!-- Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://shalini-h.vercel.app/#person",
+        "name": "Shalini H",
+        "givenName": "Shalini",
+        "familyName": "H",
+        "jobTitle": "Information Science & Engineering Student",
+        "url": "https://shalini-h.vercel.app",
+        "email": "shalinih6363841526@gmail.com",
+        "telephone": "+916363841526",
+        "sameAs": [
+          "https://github.com/Shalini-H",
+          "https://www.linkedin.com/in/shalinih0509/"
+        ],
+        "affiliation": {
+          "@type": "EducationalOrganization",
+          "name": "The National Institute of Engineering, Mysore",
+          "url": "https://nie.ac.in"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
 
-  <!-- Navigation Bar -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="logo">
-        <span class="logo-name">Shalini H</span>
-        <span class="logo-role">/ Computer Engineering</span>
+  <!-- Top Hero Stripe Gradient Backdrop -->
+  <div class="stripe-mesh-backdrop" aria-hidden="true">
+    <div class="mesh-shape mesh-shape-1"></div>
+    <div class="mesh-shape mesh-shape-2"></div>
+    <div class="mesh-shape mesh-shape-3"></div>
+    <div class="mesh-shape mesh-shape-4"></div>
+  </div>
+
+  <!-- Stripe-Style Clean Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-container header-inner">
+      <a href="#hero" class="brand-link">
+        <span class="brand-badge">SH</span>
+        <span class="brand-name">Shalini H</span>
       </a>
-      
-      <nav class="nav-links" id="navLinks">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#achievements" class="nav-link">Achievements</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#philosophy" class="nav-link">Engineering</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
 
-      <div class="nav-actions">
-        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="nav-social-link" title="GitHub">
-          <i class="fa-brands fa-github"></i>
+      <div class="header-actions">
+        <a href="#contact" class="header-contact-link">
+          <span>Contact</span>
+          <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
         </a>
-        <a href="https://www.linkedin.com/in/shalinih0509/" target="_blank" rel="noopener noreferrer" class="nav-social-link" title="LinkedIn">
-          <i class="fa-brands fa-linkedin-in"></i>
+        <a href="Shalini-H-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-header-cta">
+          <span>Resume (PDF)</span>
+          <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
         </a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
-          <i class="fa-solid fa-bars"></i>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="status-pill">
-            <span class="status-indicator"></span> 5th Semester • CGPA: 8.75/10 • Open to Placements & Internships
+  <main id="main-content">
+    <!-- Hero Section: Stripe Gradient, White, and Dark Blue -->
+    <section class="section-hero" id="hero">
+      <div class="site-container hero-container">
+        <div class="hero-content reveal-on-scroll">
+          <div class="eyebrow-pill">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>NIE Mysore · Information Science · CGPA 8.75</span>
           </div>
+
           <h1 class="hero-title">
-            Hi, I'm <span class="text-gradient">Shalini H</span>
+            Deterministic software systems to power your applications.
           </h1>
-          <p class="hero-headline">
-            <span class="typed-text" id="typedText"></span><span class="cursor">&nbsp;</span>
+
+          <p class="hero-lead">
+            Join the engineering teams building with high-test rigor. I craft local-first web engines, pure-function algorithm visualizers, and reactive browser systems validated by 196+ automated unit tests.
           </p>
-          <p class="hero-description">
-            Computer Engineering undergraduate at <strong>The National Institute of Engineering (NIE), Mysore</strong> with a strong academic record (<strong>8.75 CGPA</strong>). Focused on <strong>Data Structures & Algorithms (DSA)</strong>, <strong>Object-Oriented Programming (OOPs)</strong>, and core software engineering fundamentals.
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-stripe-dark">
+              <span>Explore Projects</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+
+            <a href="mailto:shalinih6363841526@gmail.com" class="link-stripe-arrow">
+              <span>Contact Shalini</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-tag-pills">
+            <span class="pill-label">Core Stack:</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">React.js</span>
+            <span class="tech-badge">Java (OOP)</span>
+            <span class="tech-badge">Graph Theory</span>
+            <span class="tech-badge">Vitest Testing</span>
+          </div>
+        </div>
+
+        <!-- Stripe Layered Dual-Mockup Showcase -->
+        <div class="hero-mockup-stage reveal-on-scroll" data-parallax="0.04">
+          <!-- Back Card: Engineering Intelligence Dashboard -->
+          <div class="mockup-dash-card">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="dash-window-title">
+                <svg class="dash-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <span>algotrace-telemetry</span>
+              </div>
+              <span class="mockup-tag-live">60 FPS</span>
+            </div>
+
+            <div class="dash-body">
+              <div class="dash-metrics-row">
+                <div class="dash-metric-col">
+                  <span class="dash-label">TEST SUITES</span>
+                  <span class="dash-val">196 / 196</span>
+                  <span class="dash-badge badge-success">100% Passing</span>
+                </div>
+                <div class="dash-metric-col">
+                  <span class="dash-label">STEP LATENCY</span>
+                  <span class="dash-val">16.6 ms</span>
+                  <span class="dash-badge badge-neutral">Deterministic</span>
+                </div>
+              </div>
+
+              <div class="dash-chart-card">
+                <div class="chart-header">
+                  <span class="chart-title">Graph Traversal Execution Time</span>
+                  <span class="chart-tag">O(V + E log V)</span>
+                </div>
+                <svg class="dash-chart-svg" viewBox="0 0 320 80" fill="none" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="chartGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#635bff" stop-opacity="0.25"/>
+                      <stop offset="100%" stop-color="#635bff" stop-opacity="0.0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M 0 68 Q 50 62 100 48 T 200 32 T 270 16 T 320 8 L 320 80 L 0 80 Z" fill="url(#chartGlow)" />
+                  <path d="M 0 68 Q 50 62 100 48 T 200 32 T 270 16 T 320 8" stroke="#635bff" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                  <circle cx="100" cy="48" r="3.5" fill="#635bff" stroke="#ffffff" stroke-width="2" />
+                  <circle cx="200" cy="32" r="3.5" fill="#635bff" stroke="#ffffff" stroke-width="2" />
+                  <circle cx="270" cy="16" r="3.5" fill="#635bff" stroke="#ffffff" stroke-width="2" />
+                  <circle cx="320" cy="8" r="4" fill="#00d4ff" stroke="#ffffff" stroke-width="2" />
+                </svg>
+                <div class="chart-labels">
+                  <span>Input: N=10</span>
+                  <span>N=100</span>
+                  <span>N=500</span>
+                  <span>N=1000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Front Card: Profile & Verified Credentials -->
+          <div class="stripe-mockup-card">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <span class="mockup-domain">engineer.shalini-h.dev</span>
+            </div>
+
+            <div class="mockup-body">
+              <div class="mockup-portrait-row">
+                <img src="photo.jpeg" alt="Shalini H" class="mockup-avatar" width="96" height="110">
+                <div class="mockup-identity">
+                  <div class="mockup-name">Shalini H</div>
+                  <div class="mockup-role">Information Science & Engineering</div>
+                  <div class="mockup-college">NIE Mysore (Batch 2024-2028)</div>
+                  <div class="mockup-status-tag">
+                    <span class="status-pulse"></span>
+                    <span>Available for Internships</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mockup-stats-panel">
+                <div class="mockup-stat-cell">
+                  <span class="stat-cell-label">ACADEMIC CGPA</span>
+                  <span class="stat-cell-val highlight-blue">8.75 / 10</span>
+                </div>
+              </div>
+
+              <div class="mockup-action-strip">
+                <button type="button" class="btn-mockup-action copy-email-btn" data-email="shalinih6363841526@gmail.com">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-label">Copy Email</span>
+                </button>
+                <a href="Shalini-H-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-mockup-resume">
+                  <span>Resume PDF</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics Bar: Clean Stripe Slate & White Strip -->
+    <section class="section-metrics" aria-label="Engineering Performance Metrics">
+      <div class="site-container">
+        <div class="metrics-grid">
+          <div class="metric-item reveal-on-scroll">
+            <div class="metric-number">8.75</div>
+            <div class="metric-title">Cumulative GPA</div>
+            <div class="metric-sub">Information Science at NIE Mysore</div>
+          </div>
+          <div class="metric-item reveal-on-scroll">
+            <div class="metric-number">196+</div>
+            <div class="metric-title">Unit Tests Authored</div>
+            <div class="metric-sub">Automated Vitest test coverage</div>
+          </div>
+          <div class="metric-item reveal-on-scroll">
+            <div class="metric-number">17</div>
+            <div class="metric-title">Algorithms Engine</div>
+            <div class="metric-sub">Sorting, searching, and graph theory</div>
+          </div>
+          <div class="metric-item reveal-on-scroll">
+            <div class="metric-number">SIH '26</div>
+            <div class="metric-title">Smart India Hackathon</div>
+            <div class="metric-sub">Selected institutional nominee</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section: Stripe Card Grid -->
+    <section class="section-projects" id="projects">
+      <div class="site-container">
+        <div class="section-header-center reveal-on-scroll">
+          <span class="section-kicker">ENGINEERING SHOWCASE</span>
+          <h2 class="section-heading">Featured Systems & Projects</h2>
+          <p class="section-subheading">
+            Engineered with decoupled architecture, pure state transitions, and zero backend latency.
           </p>
-          
-          <div class="hero-buttons">
-            <a href="#skills" class="btn btn-primary">
-              <i class="fa-solid fa-laptop-code"></i> Explore Skills
-            </a>
-            <a href="#achievements" class="btn btn-secondary">
-              <i class="fa-solid fa-trophy"></i> View Achievements
-            </a>
-          </div>
 
-          <div class="hero-meta">
-            <div class="meta-item">
-              <i class="fa-solid fa-building-columns"></i>
-              <span>NIE Mysore (North Campus)</span>
-            </div>
-            <div class="meta-separator">•</div>
-            <div class="meta-item">
-              <i class="fa-solid fa-award"></i>
-              <span>Smart India Hackathon Selected</span>
-            </div>
-            <div class="meta-separator">•</div>
-            <div class="meta-item">
-              <i class="fa-solid fa-code"></i>
-              <span>C • Java • Python • MySQL</span>
-            </div>
+          <div class="project-filter-pills" role="tablist" aria-label="Filter projects">
+            <button type="button" class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Systems</button>
+            <button type="button" class="filter-pill" data-filter="algorithm" role="tab" aria-selected="false">Algorithms</button>
+            <button type="button" class="filter-pill" data-filter="decision" role="tab" aria-selected="false">Decision Engines</button>
+            <button type="button" class="filter-pill" data-filter="systems" role="tab" aria-selected="false">Distributed State</button>
           </div>
         </div>
 
-        <div class="hero-media">
-          <div class="profile-card">
-            <div class="profile-frame">
-              <img src="photo.jpeg" alt="Shalini H" class="profile-image" />
+        <div class="projects-grid-container">
+          <!-- Project 1: AlgoTrace -->
+          <article class="stripe-project-card reveal-on-scroll" data-category="algorithm">
+            <div class="card-badge-row">
+              <span class="badge-indigo">ALGORITHM VISUALIZER</span>
+              <span class="badge-date">October 2026</span>
             </div>
-            <div class="profile-info-footer">
-              <div>
-                <div class="profile-name">Shalini H</div>
-                <div class="profile-status">Computer Engineering • 5th Sem</div>
-              </div>
-              <div class="profile-links">
-                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="profile-icon-btn" title="GitHub (@Shalini-H)">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/shalinih0509/" target="_blank" rel="noopener noreferrer" class="profile-icon-btn" title="LinkedIn (shalinih0509)">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        <div class="section-heading">
-          <span class="sub-heading">Profile Summary</span>
-          <h2 class="main-heading">About Me</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-text-card">
-            <h3>Academic & Professional Overview</h3>
-            <p>
-              I am a 5th-semester Computer Engineering student at <strong>The National Institute of Engineering (NIE), Mysore, North Campus</strong>, maintaining a consistent academic track record with an <strong>8.75 CGPA</strong>.
-            </p>
-            <p>
-              My primary technical focus lies in problem-solving through <strong>Data Structures and Algorithms</strong> and implementing scalable modular systems using <strong>Object-Oriented Programming (OOP)</strong> in Java and C++. In addition, I have hands-on experience with <strong>Python</strong>, <strong>MySQL database management</strong>, and frontend development with <strong>HTML, CSS, and Vanilla JavaScript</strong>.
+            <h3 class="card-project-title">AlgoTrace: Interactive Algorithm Execution Visualizer</h3>
+            <p class="card-project-desc">
+              An interactive visualizer and educational execution engine for 17 sorting, searching, and graph algorithms. Built with pure-function engines producing immutable step traces for lossless timeline replay without mutation bugs.
             </p>
 
-            <div class="languages-spoken">
-              <span class="lang-title"><i class="fa-solid fa-earth-americas"></i> Languages:</span>
-              <span class="lang-pill">English</span>
-              <span class="lang-pill">Kannada</span>
-              <span class="lang-pill">Hindi</span>
-            </div>
-
-            <div class="key-traits">
-              <div class="trait-item">
-                <div class="trait-icon"><i class="fa-solid fa-check"></i></div>
-                <div>
-                  <strong>Analytical & Quick Learner:</strong> Rapidly masters complex computer science concepts, algorithms, and development tools.
-                </div>
-              </div>
-              <div class="trait-item">
-                <div class="trait-icon"><i class="fa-solid fa-check"></i></div>
-                <div>
-                  <strong>Problem Solving & Adaptability:</strong> Strong analytical mindset geared toward finding optimal and efficient algorithmic solutions.
-                </div>
-              </div>
-              <div class="trait-item">
-                <div class="trait-icon"><i class="fa-solid fa-check"></i></div>
-                <div>
-                  <strong>Teamwork & Communication:</strong> Positive attitude, active listener, and dependable team contributor in collaborative projects and hackathons.
-                </div>
+            <div class="pipeline-blueprint">
+              <span class="blueprint-tag">SYSTEM EXECUTION PIPELINE</span>
+              <div class="pipeline-flow">
+                <span class="pipe-node">Array Input</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Validation Layer</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node pipe-highlight">Pure Trace Engine</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Deterministic Replay</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">SVG Visualizer</span>
               </div>
             </div>
-          </div>
 
-          <div class="about-highlights-card">
-            <h3 class="highlights-title">Academic & Technical Snapshot</h3>
-            
-            <div class="highlight-stat">
-              <div class="stat-value">8.75 / 10</div>
-              <div class="stat-desc">Cumulative Grade Point Average (CGPA)</div>
-            </div>
-
-            <div class="highlight-stat">
-              <div class="stat-value">5th Semester</div>
-              <div class="stat-desc">B.E. Computer Engineering, NIE Mysore</div>
-            </div>
-
-            <div class="highlight-stat">
-              <div class="stat-value">SIH Selection</div>
-              <div class="stat-desc">Smart India Hackathon College Level Nominee</div>
-            </div>
-
-            <div class="highlight-stat">
-              <div class="stat-value">Core Competencies</div>
-              <div class="stat-desc">DSA, OOPs, C, Python, Java, MySQL, Git</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technical Skills Section -->
-    <section class="section skills-section" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <span class="sub-heading">Technical Skills</span>
-          <h2 class="main-heading">Skills & Competencies</h2>
-          <p class="section-lead">A structured breakdown of my core computer science foundation, programming languages, and development tools.</p>
-        </div>
-
-        <div class="skills-grid">
-          <!-- Card 1: Programming Languages -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-code"></i></div>
-              <h3>Programming Languages</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fa-solid fa-c"></i> C Programming</span>
-              <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
-              <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
-              <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
-            </div>
-          </div>
-
-          <!-- Card 2: Core Computer Science & Algorithms -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
-              <h3>Core Computer Science</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag highlight-tag"><i class="fa-solid fa-diagram-project"></i> Data Structures & Algorithms</span>
-              <span class="skill-tag highlight-tag"><i class="fa-solid fa-cubes"></i> Object-Oriented Programming (OOPs)</span>
-              <span class="skill-tag"><i class="fa-solid fa-gears"></i> Algorithm Analysis & Complexity</span>
-              <span class="skill-tag"><i class="fa-solid fa-microchip"></i> Operating Systems</span>
-              <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Computer Networks</span>
-            </div>
-          </div>
-
-          <!-- Card 3: Databases & Management -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-database"></i></div>
-              <h3>Database & Backend Basics</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag highlight-tag"><i class="fa-solid fa-server"></i> MySQL</span>
-              <span class="skill-tag"><i class="fa-solid fa-table"></i> DBMS Concepts</span>
-              <span class="skill-tag"><i class="fa-solid fa-magnifying-glass"></i> SQL Queries & Indexing</span>
-              <span class="skill-tag"><i class="fa-solid fa-sitemap"></i> Relational Schema Design</span>
-            </div>
-          </div>
-
-          <!-- Card 4: Web & Frontend Technologies -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-laptop-code"></i></div>
-              <h3>Web & Frontend Development</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
-              <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-              <span class="skill-tag"><i class="fa-solid fa-code"></i> Vanilla JavaScript</span>
-              <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive UI Design</span>
-              <span class="skill-tag"><i class="fa-solid fa-layer-group"></i> DOM Manipulation</span>
-            </div>
-          </div>
-
-          <!-- Card 5: Developer Tools -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-              <h3>Tools & Platforms</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
-              <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
-              <span class="skill-tag"><i class="fa-solid fa-file-code"></i> Visual Studio Code (VS Code)</span>
-              <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Command Line</span>
-            </div>
-          </div>
-
-          <!-- Card 6: Professional & Soft Skills -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-people-group"></i></div>
-              <h3>Key Personal Strengths</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fa-solid fa-bolt"></i> Quick Learner</span>
-              <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
-              <span class="skill-tag"><i class="fa-solid fa-users"></i> Teamwork & Collaboration</span>
-              <span class="skill-tag"><i class="fa-solid fa-arrows-spin"></i> Adaptability</span>
-              <span class="skill-tag"><i class="fa-solid fa-comments"></i> Communication</span>
-              <span class="skill-tag"><i class="fa-solid fa-face-smile"></i> Positive Attitude</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="section achievements-section" id="achievements">
-      <div class="container">
-        <div class="section-heading">
-          <span class="sub-heading">Milestones & Competitions</span>
-          <h2 class="main-heading">Achievements & Recognition</h2>
-          <p class="section-lead">Key competitive milestones achieved during my academic journey at NIE Mysore.</p>
-        </div>
-
-        <div class="achievements-grid">
-          <!-- Achievement 1 -->
-          <div class="achievement-card">
-            <div class="achievement-badge"><i class="fa-solid fa-award"></i> National Initiative</div>
-            <div class="achievement-icon-wrapper">
-              <i class="fa-solid fa-trophy"></i>
-            </div>
-            <h3 class="achievement-title">Smart India Hackathon (SIH) Selection</h3>
-            <p class="achievement-desc">
-              Selected to represent the institution at the internal rounds for the nationwide Smart India Hackathon. Collaborated with team members to ideate and propose innovative technical solutions to real-world problem statements.
-            </p>
-            <div class="achievement-tags">
-              <span>Innovation</span>
-              <span>Team Hackathon</span>
-              <span>Problem Statement Analysis</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Education & Training Section -->
-    <section class="section education-section" id="education">
-      <div class="container">
-        <div class="section-heading">
-          <span class="sub-heading">Academic Track Record</span>
-          <h2 class="main-heading">Education</h2>
-        </div>
-
-        <div class="timeline-container">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-degree">Bachelor of Engineering (B.E.) in Computer Engineering</h3>
-                  <span class="timeline-institution">The National Institute of Engineering (NIE), Mysore (North Campus)</span>
-                </div>
-                <div class="cgpa-pill">
-                  <i class="fa-solid fa-graduation-cap"></i> CGPA: <strong>8.75 / 10</strong>
-                </div>
+            <div class="card-specs-row">
+              <div class="spec-col">
+                <strong>17 Algorithms Covered</strong>
+                <p>Includes Dijkstra (tentative distances), Prim (MST accumulator), Bellman-Ford (cycle detection), Kahn's Topological Sort, Quick Sort, and Merge Sort.</p>
               </div>
-              <div class="timeline-status-line">
-                <span><i class="fa-regular fa-calendar"></i> Current: 5th Semester</span>
-                <span>•</span>
-                <span><i class="fa-solid fa-location-dot"></i> Mysore, Karnataka</span>
-              </div>
-              <p class="timeline-desc">
-                Engaging in coursework centered on computer science fundamentals, data structures, algorithms, object-oriented design, operating systems, and database engineering.
-              </p>
-              
-              <div class="coursework-section">
-                <span class="coursework-heading">Relevant Coursework:</span>
-                <div class="coursework-tags">
-                  <span class="coursework-tag">Data Structures & Algorithms</span>
-                  <span class="coursework-tag">Object-Oriented Programming (Java/C++)</span>
-                  <span class="coursework-tag">Database Management Systems (MySQL)</span>
-                  <span class="coursework-tag">Computer Organization & Architecture</span>
-                  <span class="coursework-tag">Design & Analysis of Algorithms</span>
-                  <span class="coursework-tag">Operating Systems</span>
-                  <span class="coursework-tag">Computer Networks</span>
-                </div>
+              <div class="spec-col">
+                <strong>117 Automated Vitest Tests</strong>
+                <p>Tested across 4 complete suites verifying mathematical invariants, boundary conditions, and state transitions.</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Featured Projects Section -->
-    <section class="section projects-section" id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <span class="sub-heading">Technical Projects</span>
-          <h2 class="main-heading">Projects & Practical Work</h2>
-          <p class="section-lead">Applications and projects developed implementing clean coding standards, algorithms, and responsive UI.</p>
-        </div>
+            <div class="card-footer-row">
+              <div class="tech-tags">
+                <span class="tag-chip">React 18</span>
+                <span class="tag-chip">TypeScript 5</span>
+                <span class="tag-chip">Vite</span>
+                <span class="tag-chip">Tailwind CSS</span>
+                <span class="tag-chip">Vitest (117 Tests)</span>
+                <span class="tag-chip">Graph Theory</span>
+              </div>
 
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-card">
-            <div class="project-header">
-              <span class="project-type">Frontend Engineering</span>
-              <div class="project-links">
-                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Repository">
-                  <i class="fa-brands fa-github"></i>
+              <div class="card-cta-group">
+                <button type="button" class="btn-card-spec" data-modal="modal-algotrace">
+                  <span>Architecture Specs</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-card-github">
+                  <span>GitHub</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
                 </a>
               </div>
             </div>
-            <h3 class="project-title">Responsive Developer Portfolio</h3>
-            <p class="project-description">
-              Engineered a high-performance personal developer portfolio utilizing semantic HTML5, modern CSS3, and vanilla JavaScript without external bloat. Structured for recruiter evaluation and placement interviews.
-            </p>
-            <div class="project-tech-stack">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>Vanilla JS</span>
-              <span>Git & GitHub</span>
+          </article>
+
+          <!-- Project 2: CookPilot -->
+          <article class="stripe-project-card reveal-on-scroll" data-category="decision">
+            <div class="card-badge-row">
+              <span class="badge-indigo">LOCAL-FIRST DECISION ENGINE</span>
+              <span class="badge-date">October 2026</span>
             </div>
-            <ul class="project-highlights">
-              <li>Organized modular CSS variables and media queries for seamless responsive behavior across mobile, tablet, and desktop.</li>
-              <li>Integrated interactive JavaScript DOM logic for typewriter effects, navigation tracking, and dynamic states.</li>
+
+            <h3 class="card-project-title">CookPilot: Local-First Cooking Decision Engine</h3>
+            <p class="card-project-desc">
+              A deterministic, zero-backend kitchen intelligence engine that matches recipes from available pantry items using transparent weighted mathematical scoring, coupled with a finite state machine cooking cockpit and culinary error diagnosis.
+            </p>
+
+            <div class="pipeline-blueprint">
+              <span class="blueprint-tag">SYSTEM EXECUTION PIPELINE</span>
+              <div class="pipeline-flow">
+                <span class="pipe-node">Pantry Items</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node pipe-highlight">Weighted Scorer (85%/15%)</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">State Machine</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Web Audio Synthesizer</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Recovery Rules</span>
+              </div>
+            </div>
+
+            <div class="card-specs-row">
+              <div class="spec-col">
+                <strong>Weighted Matching Model</strong>
+                <p>Allocates 85% score weight to required ingredients, credits valid culinary substitutions at 40% to 80%, and adds up to 15% bonus for garnishes.</p>
+              </div>
+              <div class="spec-col">
+                <strong>79 Automated Vitest Tests</strong>
+                <p>Comprehensive test suite covering portion scaling mathematics, timer intervals, scoring bounds, and state transitions.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-row">
+              <div class="tech-tags">
+                <span class="tag-chip">React 18</span>
+                <span class="tag-chip">TypeScript 5</span>
+                <span class="tag-chip">Vite</span>
+                <span class="tag-chip">Vitest (79 Tests)</span>
+                <span class="tag-chip">Web Audio API</span>
+                <span class="tag-chip">State Machine</span>
+              </div>
+
+              <div class="card-cta-group">
+                <button type="button" class="btn-card-spec" data-modal="modal-cookpilot">
+                  <span>Architecture Specs</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-card-github">
+                  <span>GitHub</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: CortX -->
+          <article class="stripe-project-card reveal-on-scroll" data-category="systems">
+            <div class="card-badge-row">
+              <span class="badge-indigo">DISTRIBUTED CLIENT PLATFORM</span>
+              <span class="badge-date">May 2026</span>
+            </div>
+
+            <h3 class="card-project-title">CortX: Real-Time Hospital Triage & Queue Management</h3>
+            <p class="card-project-desc">
+              A zero-backend distributed clinical workflow platform automating emergency triage, physician assignment, and pharmacy inventory across 5 integrated modules with multi-tab synchronized waiting-room displays.
+            </p>
+
+            <div class="pipeline-blueprint">
+              <span class="blueprint-tag">SYSTEM EXECUTION PIPELINE</span>
+              <div class="pipeline-flow">
+                <span class="pipe-node">Patient Arrival</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node pipe-highlight">Priority Queue</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Rolling-Average ETA</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">BroadcastChannel Sync</span>
+                <span class="pipe-sep">→</span>
+                <span class="pipe-node">Waiting Display</span>
+              </div>
+            </div>
+
+            <div class="card-specs-row">
+              <div class="spec-col">
+                <strong>Priority Queue Scheduling</strong>
+                <p>Ranks emergency cases dynamically by medical severity indices, automatically routing arrivals to available specialists.</p>
+              </div>
+              <div class="spec-col">
+                <strong>Multi-Tab State Synchronization</strong>
+                <p>Utilizes BroadcastChannel and Storage events to keep triage, doctor, and public waiting rooms synchronized with 0ms server overhead.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-row">
+              <div class="tech-tags">
+                <span class="tag-chip">JavaScript (ES6+)</span>
+                <span class="tag-chip">BroadcastChannel API</span>
+                <span class="tag-chip">Storage Events</span>
+                <span class="tag-chip">Priority Queues</span>
+                <span class="tag-chip">HTML5 / CSS3</span>
+              </div>
+
+              <div class="card-cta-group">
+                <button type="button" class="btn-card-spec" data-modal="modal-cortx">
+                  <span>Architecture Specs</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-card-github">
+                  <span>GitHub</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: BharatResQ -->
+          <article class="stripe-project-card reveal-on-scroll" data-category="systems">
+            <div class="card-badge-row">
+              <span class="badge-gold">HACKATHON INNOVATION</span>
+              <span class="badge-date">Smart India Hackathon 2026</span>
+            </div>
+
+            <h3 class="card-project-title">BharatResQ: AI-Based Landslide Risk Early Warning System</h3>
+            <p class="card-project-desc">
+              Selected at the college level to represent NIE Mysore in the nationwide Smart India Hackathon 2026. Built a full-stack early hazard monitoring platform designed for landslide-prone terrains in the Northeast Region of India.
+            </p>
+
+            <div class="card-specs-row">
+              <div class="spec-col">
+                <strong>Geohazard Telemetry</strong>
+                <p>Synthesizes rainfall metrics, geological slope angles, and soil saturation readings to establish predictive danger thresholds.</p>
+              </div>
+              <div class="spec-col">
+                <strong>Institutional Selection</strong>
+                <p>Selected by the university evaluation jury to represent the institution at the national SIH level.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-row">
+              <div class="tech-tags">
+                <span class="tag-chip">SIH 2026 Nominee</span>
+                <span class="tag-chip">Geohazard Telemetry</span>
+                <span class="tag-chip">Full-Stack Prototype</span>
+                <span class="tag-chip">Team Leadership</span>
+              </div>
+
+              <div class="card-cta-group">
+                <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="link-card-github">
+                  <span>GitHub</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Methodology: Clean White Cards on Slate Light -->
+    <section class="section-philosophy" id="philosophy">
+      <div class="site-container">
+        <div class="section-header-left reveal-on-scroll">
+          <span class="section-kicker">ENGINEERING VALUES</span>
+          <h2 class="section-heading">Core Architecture Principles</h2>
+          <p class="section-subheading">
+            The foundational engineering rules guiding how I design and construct software systems.
+          </p>
+        </div>
+
+        <div class="principles-grid">
+          <div class="principle-box reveal-on-scroll">
+            <div class="principle-index">01</div>
+            <h3 class="principle-name">Pure Execution & Determinism</h3>
+            <p class="principle-desc">
+              Algorithms and business calculations run as pure functions without mutable side-effects. By returning immutable step snapshots, user interfaces achieve deterministic replay, accurate backward stepping, and zero state drift.
+            </p>
+            <div class="principle-label">Implemented in AlgoTrace execution traces</div>
+          </div>
+
+          <div class="principle-box reveal-on-scroll">
+            <div class="principle-index">02</div>
+            <h3 class="principle-name">Finite State Machine Guards</h3>
+            <p class="principle-desc">
+              Complex transitions are modeled as formal state machines with strict bounds checking rather than messy boolean variables. Illegal states, race conditions, and orphaned timer intervals are mathematically impossible.
+            </p>
+            <div class="principle-label">Implemented in CookPilot cooking cockpit</div>
+          </div>
+
+          <div class="principle-box reveal-on-scroll">
+            <div class="principle-index">03</div>
+            <h3 class="principle-name">Local-First Architecture</h3>
+            <p class="principle-desc">
+              Harnessing modern browser APIs (BroadcastChannel, Web Audio, Storage events, Web Workers) to run systems locally. Eliminating server roundtrips gives instant user responsiveness and complete offline capability.
+            </p>
+            <div class="principle-label">Implemented in CortX multi-station sync</div>
+          </div>
+
+          <div class="principle-box reveal-on-scroll">
+            <div class="principle-index">04</div>
+            <h3 class="principle-name">Automated Verification</h3>
+            <p class="principle-desc">
+              Testing is an integral part of the architecture, not an afterthought. With 196+ automated tests across projects, mathematical bounds, edge cases, and state transitions are systematically verified.
+            </p>
+            <div class="principle-label">Validated with Vitest test suites</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section: Stripe Style Grid -->
+    <section class="section-skills" id="skills">
+      <div class="site-container">
+        <div class="section-header-left reveal-on-scroll">
+          <span class="section-kicker">TECHNICAL STACK</span>
+          <h2 class="section-heading">Skills & Competencies</h2>
+          <p class="section-subheading">
+            A structured breakdown of programming languages, frontend tools, testing frameworks, and foundational computer science topics.
+          </p>
+        </div>
+
+        <div class="skills-grid-wrapper">
+          <div class="skills-card-col reveal-on-scroll">
+            <div class="col-heading">Programming Languages</div>
+            <ul class="col-list">
+              <li>
+                <strong>Java</strong>
+                <span>Object-Oriented Programming, Advanced Java, Collections, Multi-threading</span>
+              </li>
+              <li>
+                <strong>TypeScript & JavaScript (ES6+)</strong>
+                <span>Strict typing, asynchronous patterns, DOM manipulation, functional paradigms</span>
+              </li>
+              <li>
+                <strong>Python</strong>
+                <span>Scripting, algorithm prototyping, analytical problem solving</span>
+              </li>
+              <li>
+                <strong>C</strong>
+                <span>Foundational systems, pointers, memory fundamentals</span>
+              </li>
+              <li>
+                <strong>SQL (MySQL)</strong>
+                <span>Relational schema design, indexes, joins, ACID transactions</span>
+              </li>
             </ul>
           </div>
 
+          <div class="skills-card-col reveal-on-scroll">
+            <div class="col-heading">Frontend Engineering</div>
+            <ul class="col-list">
+              <li>
+                <strong>React.js</strong>
+                <span>Custom hooks, finite state machines, component architecture</span>
+              </li>
+              <li>
+                <strong>HTML5 & Modern CSS3</strong>
+                <span>Semantic markup, accessible landmarks, CSS custom properties, flex/grid</span>
+              </li>
+              <li>
+                <strong>Tailwind CSS</strong>
+                <span>Utility design systems, responsive design, clean token management</span>
+              </li>
+              <li>
+                <strong>Web APIs</strong>
+                <span>Web Audio API synthesis, BroadcastChannel multi-window sync, Storage events</span>
+              </li>
+              <li>
+                <strong>Data Visualization</strong>
+                <span>Interactive SVG canvas, custom timeline scrubbers, algorithmic charts</span>
+              </li>
+            </ul>
+          </div>
 
+          <div class="skills-card-col reveal-on-scroll">
+            <div class="col-heading">Testing & Developer Tools</div>
+            <ul class="col-list">
+              <li>
+                <strong>Vitest</strong>
+                <span>Unit testing pure functions, snapshot testing, 196+ tests authored</span>
+              </li>
+              <li>
+                <strong>Vite</strong>
+                <span>Fast bundle configuration, asset optimization, local development</span>
+              </li>
+              <li>
+                <strong>Git & GitHub</strong>
+                <span>Version control, clean atomic commits, pull request hygiene</span>
+              </li>
+              <li>
+                <strong>VS Code & Shell</strong>
+                <span>Unix command line, debugging workflows, terminal utilities</span>
+              </li>
+              <li>
+                <strong>Deployment</strong>
+                <span>Vercel, GitHub Pages, production web optimization</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-card-col reveal-on-scroll">
+            <div class="col-heading">Computer Science Core</div>
+            <ul class="col-list">
+              <li>
+                <strong>Data Structures & Algorithms</strong>
+                <span>Trees, heaps, stacks, queues, hash tables, sorting/searching paradigms</span>
+              </li>
+              <li>
+                <strong>Graph Theory & Algorithms</strong>
+                <span>Dijkstra, Prim, Bellman-Ford, Kahn's Topological Sort, BFS, DFS, MST</span>
+              </li>
+              <li>
+                <strong>Complexity Analysis</strong>
+                <span>Big-O asymptotic time and auxiliary space evaluation</span>
+              </li>
+              <li>
+                <strong>DBMS & Schema Design</strong>
+                <span>Normalization (1NF-BCNF), foreign key integrity, query optimization</span>
+              </li>
+              <li>
+                <strong>Operating Systems & Networks</strong>
+                <span>Scheduling, concurrency, virtual memory, TCP/IP, HTTP</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Professional Interests / Balance Section -->
-    <section class="section interests-section" id="interests">
-      <div class="container">
-        <div class="interests-box">
-          <div class="interests-header">
-            <span class="sub-heading">Beyond Academics</span>
-            <h3 class="interests-title">Personal Interests & Focus</h3>
-            <p class="interests-desc">Activities that maintain balance, sharpen mental focus, and foster creative discipline.</p>
+    <!-- Education Section -->
+    <section class="section-education" id="education">
+      <div class="site-container">
+        <div class="section-header-left reveal-on-scroll">
+          <span class="section-kicker">ACADEMIC BACKGROUND</span>
+          <h2 class="section-heading">Education & Credentials</h2>
+        </div>
+
+        <div class="education-stripe-panel reveal-on-scroll">
+          <div class="edu-top-row">
+            <div>
+              <h3 class="edu-degree-title">Bachelor of Engineering (B.E.) in Information Science and Engineering</h3>
+              <div class="edu-school-name">The National Institute of Engineering (NIE), Mysore (North Campus)</div>
+            </div>
+            <div class="edu-cgpa-pill">
+              <span class="cgpa-caption">CGPA</span>
+              <span class="cgpa-digits">8.75 / 10.0</span>
+            </div>
           </div>
-          <div class="interests-grid">
-            <div class="interest-item">
-              <i class="fa-solid fa-person-swimming"></i>
-              <span>Swimming (Endurance & Focus)</span>
-            </div>
-            <div class="interest-item">
-              <i class="fa-solid fa-headphones"></i>
-              <span>Listening to Music</span>
-            </div>
-            <div class="interest-item">
-              <i class="fa-solid fa-microphone-lines"></i>
-              <span>Singing</span>
-            </div>
-            <div class="interest-item">
-              <i class="fa-solid fa-music"></i>
-              <span>Dancing (Rhythm & Creativity)</span>
+
+          <div class="edu-timeline-strip">
+            <span>Batch: 2024 - 2028 (Currently in Year 3 / 5th Semester)</span>
+            <span class="edu-bullet">•</span>
+            <span>Mysore, Karnataka, India</span>
+            <span class="edu-bullet">•</span>
+            <span class="edu-highlight">First Class with Distinction</span>
+          </div>
+
+          <p class="edu-summary-p">
+            Maintaining a high academic ranking across departmental semesters. Coursework emphasizes strong mathematical foundations in algorithms, database engineering, operating systems, and object-oriented design.
+          </p>
+
+          <div class="coursework-box">
+            <div class="coursework-title">Relevant Coursework:</div>
+            <div class="coursework-badges">
+              <span class="course-chip">Data Structures & Algorithms</span>
+              <span class="course-chip">Design and Analysis of Algorithms</span>
+              <span class="course-chip">Advanced Java Programming</span>
+              <span class="course-chip">Graph Theory & Discrete Math</span>
+              <span class="course-chip">Database Management Systems (MySQL)</span>
+              <span class="course-chip">Operating Systems</span>
+              <span class="course-chip">Computer Networks</span>
+              <span class="course-chip">Computer Architecture</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact / Placement Section -->
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="contact-panel">
-          <div class="contact-header">
-            <span class="sub-heading">Placement & Career Inquiries</span>
-            <h2 class="main-heading">Get in Touch</h2>
-            <p class="section-lead">I am actively seeking software engineering internship and full-time placement opportunities. Let's connect!</p>
-          </div>
+    <!-- Contact Section: Stripe Dark Blue Callout -->
+    <section class="section-contact" id="contact">
+      <div class="site-container">
+        <div class="contact-banner-card reveal-on-scroll">
+          <div class="contact-content-inner">
+            <span class="banner-kicker">READY TO CONNECT?</span>
+            <h2 class="banner-heading">Let's build software together.</h2>
+            <p class="banner-sub">
+              I am actively interviewing for software engineering internships and full-time placement roles where code quality, algorithmic rigor, and thoughtful user experiences are valued.
+            </p>
 
-          <div class="contact-grid">
-            <a href="https://www.linkedin.com/in/shalinih0509/" target="_blank" rel="noopener noreferrer" class="contact-item">
-              <div class="contact-icon linkedin-bg"><i class="fa-brands fa-linkedin-in"></i></div>
-              <div class="contact-meta">
-                <span class="contact-label">LinkedIn Profile</span>
-                <span class="contact-value">shalinih0509</span>
-              </div>
-              <i class="fa-solid fa-arrow-up-right-from-square contact-ext"></i>
-            </a>
-
-            <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="contact-item">
-              <div class="contact-icon github-bg"><i class="fa-brands fa-github"></i></div>
-              <div class="contact-meta">
-                <span class="contact-label">GitHub Repository</span>
-                <span class="contact-value">Shalini-H</span>
-              </div>
-              <i class="fa-solid fa-arrow-up-right-from-square contact-ext"></i>
-            </a>
-          </div>
-
-          <div class="placement-cta-box">
-            <div class="cta-text">
-              <h4>Interested in discussing an engineering role?</h4>
-              <p>5th Semester Computer Engineering student at NIE Mysore (8.75 CGPA) ready to contribute to your engineering team.</p>
-            </div>
-            <div class="cta-actions">
-              <a href="https://www.linkedin.com/in/shalinih0509/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+            <div class="banner-actions">
+              <a href="mailto:shalinih6363841526@gmail.com" class="btn-banner-primary">
+                <span>Send Direct Email</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
               </a>
+
+              <a href="Shalini-H-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-banner-secondary">
+                <span>Download Resume</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+
+              <button type="button" class="btn-banner-ghost copy-email-btn" data-email="shalinih6363841526@gmail.com">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span class="copy-label">Copy Email</span>
+              </button>
+            </div>
+
+            <div class="banner-links-row">
+              <a href="mailto:shalinih6363841526@gmail.com" class="banner-link">shalinih6363841526@gmail.com</a>
+              <span class="banner-sep">•</span>
+              <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="banner-link">github.com/Shalini-H</a>
+              <span class="banner-sep">•</span>
+              <a href="https://www.linkedin.com/in/shalinih0509/" target="_blank" rel="noopener noreferrer" class="banner-link">linkedin.com/in/shalinih0509</a>
+              <span class="banner-sep">•</span>
+              <span class="banner-location">Mysore, Karnataka, India</span>
             </div>
           </div>
         </div>
@@ -491,19 +813,214 @@
     </section>
   </main>
 
-  <!-- Professional Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-left">
-        <span class="footer-brand">Shalini H</span>
-        <span class="footer-copy">© <span id="currentYear"></span> Shalini H • The National Institute of Engineering, Mysore</span>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="site-container footer-content">
+      <div class="footer-brand">
+        <span class="footer-name">Shalini H</span>
+        <span class="footer-inst">Information Science & Engineering · The National Institute of Engineering, Mysore</span>
       </div>
+
       <div class="footer-links">
-        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/shalinih0509/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="footer-anchor">GitHub</a>
+        <span class="footer-divider">/</span>
+        <a href="https://www.linkedin.com/in/shalinih0509/" target="_blank" rel="noopener noreferrer" class="footer-anchor">LinkedIn</a>
+        <span class="footer-divider">/</span>
+        <a href="Shalini-H-Resume.pdf" target="_blank" rel="noopener noreferrer" class="footer-anchor">Resume</a>
+        <span class="footer-divider">/</span>
+        <a href="#hero" class="footer-anchor scroll-top">Top ↑</a>
       </div>
     </div>
   </footer>
+
+  <!-- Architecture Specification Modals -->
+  <!-- Modal 1: AlgoTrace -->
+  <div class="spec-modal" id="modal-algotrace" role="dialog" aria-modal="true" aria-labelledby="modal-algotrace-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <span class="modal-eyebrow">SYSTEM ARCHITECTURE</span>
+          <h3 class="modal-title" id="modal-algotrace-title">AlgoTrace: Pure Functional Engine Architecture</h3>
+        </div>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close dialog">×</button>
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-section">
+          <h4>Problem Statement & Architectural Decision</h4>
+          <p>
+            Traditional algorithm visualizers mutate state directly in UI animation loops (e.g. setInterval or requestAnimationFrame). This causes state drift, breaks backward stepping, and creates memory leaks when switching algorithms. AlgoTrace solves this with a strictly decoupled <strong>pure execution engine</strong>.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Execution Flow Pipeline</h4>
+          <div class="modal-code">
+User Input / Array Presets
+       ↓
+Validation Layer (Verifies sorted preconditions for Binary/Jump Search, rejects negative edges for Dijkstra)
+       ↓
+Pure Execution Engine (Algorithms execute to completion returning an immutable Step[] array)
+       ↓
+Execution Manager (Deterministic navigation: current step pointer, playback loop, scrub slider)
+       ↓
+Reactive Presentation Layer (ArrayVisualizer, SearchVisualizer, GraphVisualizer, PseudocodeViewer)
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>Algorithms Implemented (17 Total)</h4>
+          <div class="modal-cols">
+            <div>
+              <strong>Sorting (8):</strong>
+              <ul>
+                <li>Bubble Sort, Selection Sort</li>
+                <li>Insertion Sort, Merge Sort</li>
+                <li>Quick Sort (Lomuto Partitioning)</li>
+                <li>Heap Sort (Max-Heap Sift-Down)</li>
+                <li>Shell Sort, Cocktail Shaker Sort</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Searching & Graphs (9):</strong>
+              <ul>
+                <li>Linear Search, Binary Search, Jump Search</li>
+                <li>Breadth-First Search (animated FIFO queue)</li>
+                <li>Depth-First Search (animated LIFO stack)</li>
+                <li>Dijkstra's Algorithm (tentative distance table)</li>
+                <li>Bellman-Ford (negative cycle detection)</li>
+                <li>Prim's Algorithm (MST weight accumulator)</li>
+                <li>Kahn's Topological Sort (in-degree reduction)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>Testing Verification</h4>
+          <p>
+            117 automated unit tests run via Vitest verify algorithm output correctness across edge cases (empty arrays, single-element, reverse sorted, negative weights, disconnected graphs).
+          </p>
+        </div>
+      </div>
+
+      <div class="modal-foot">
+        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="btn-stripe-dark">View on GitHub</a>
+        <button type="button" class="btn-card-spec" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: CookPilot -->
+  <div class="spec-modal" id="modal-cookpilot" role="dialog" aria-modal="true" aria-labelledby="modal-cookpilot-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <span class="modal-eyebrow">SYSTEM ARCHITECTURE</span>
+          <h3 class="modal-title" id="modal-cookpilot-title">CookPilot: Weighted Decision Engine & State Machine</h3>
+        </div>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close dialog">×</button>
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-section">
+          <h4>Mathematical Ingredient Scoring Model</h4>
+          <p>
+            Unlike fuzzy search or generative LLMs that hallucinate non-existent combinations, CookPilot uses a deterministic weighted formula:
+          </p>
+          <div class="modal-code">
+Score = (Matched_Required / Total_Required) * 0.85
+      + (Substituted_Items * Substitution_Weight)
+      + (Matched_Garnishes / Total_Garnishes) * 0.15
+          </div>
+          <p>Valid culinary substitutions are credited at 40% to 80% weight depending on culinary role (e.g. Greek yogurt replacing sour cream).</p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Finite State Machine Lifecycle</h4>
+          <div class="modal-code">
+IDLE ──(Start Cooking)──> PREPARING ──(Heat Pan)──> HEATING
+                                                        │
+COMPLETED <──(Finish All Steps)── COOKING <─────────────┘
+                                  ├──(Timer Delay)──> WAITING
+                                  └──(Flame Change)──> ADJUST_HEAT
+          </div>
+          <p>The state machine prevents improper transitions, such as completing a step with an active countdown timer without explicit confirmation.</p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Web Audio API Offline Chimes</h4>
+          <p>
+            Generates custom audio frequencies directly via the browser's <code>AudioContext</code> oscillator and gain nodes, eliminating external MP3 audio asset requests and working 100% offline.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Verification & Quality</h4>
+          <p>79 automated Vitest unit tests validate recipe matching scoring bounds, state transitions, and portion scaling math from 1 to 12 servings.</p>
+        </div>
+      </div>
+
+      <div class="modal-foot">
+        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="btn-stripe-dark">View on GitHub</a>
+        <button type="button" class="btn-card-spec" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: CortX -->
+  <div class="spec-modal" id="modal-cortx" role="dialog" aria-modal="true" aria-labelledby="modal-cortx-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <span class="modal-eyebrow">SYSTEM ARCHITECTURE</span>
+          <h3 class="modal-title" id="modal-cortx-title">CortX: Distributed Browser Triage & Queue System</h3>
+        </div>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close dialog">×</button>
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-section">
+          <h4>Priority Queue & Emergency Sorting</h4>
+          <p>
+            Emergency arrivals are scored on arrival using medical severity metrics (heart rate, trauma score, respiratory distress). CortX implements a client-side priority queue that re-indexes patients immediately when critical conditions are logged.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Rolling-Window Consultation ETA</h4>
+          <div class="modal-code">
+ETA_Department = (Σ Duration of last 25 resolved consultations in Department / 25)
+                 * Active_Patients_Ahead_In_Queue
+          </div>
+          <p>
+            Dynamically adapts to real-world physician pace rather than static arbitrary estimates.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Multi-Tab Real-Time Inter-Process Communication</h4>
+          <p>
+            By combining the <code>BroadcastChannel</code> API with fallback <code>StorageEvent</code> listeners, when a triage nurse registers a patient or a doctor finishes a consultation in one tab, all other active browser windows (reception, doctor room, waiting hall) update within 2 milliseconds without server requests.
+          </p>
+        </div>
+      </div>
+
+      <div class="modal-foot">
+        <a href="https://github.com/Shalini-H" target="_blank" rel="noopener noreferrer" class="btn-stripe-dark">View on GitHub</a>
+        <button type="button" class="btn-card-spec" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-bubble" id="toastNotice" role="status" aria-live="polite" hidden>
+    <span class="toast-dot"></span>
+    <span class="toast-text" id="toastMessage">Email copied to clipboard</span>
+  </div>
 
   <script src="script.js"></script>
 </body>
